@@ -1,0 +1,130 @@
+.project-info {
+  .key-takeaways {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 8.5%;
+    padding-top: 4.6rem;
+    padding-bottom: 8.4rem;
+    background: transparent url("3 Columns Background.png") 0% 0% no-repeat
+      padding-box;
+
+    .info-box {
+      width: 33.4rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+
+      h2 {
+        font: normal normal 300 9rem "Open Sans";
+        color: #5e5322;
+      }
+
+      h3 {
+        font: normal normal normal 1.8rem "Open Sans";
+        letter-spacing: -0.36px;
+        color: #3c3c3c;
+        padding-bottom: 2.8rem;
+        padding-top: 1rem;
+      }
+
+      p {
+        font: normal normal normal 1.6rem "Open Sans";
+        letter-spacing: -0.32px;
+        color: #3c3c3c;
+      }
+    }
+  }
+
+  .steps-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3.1rem;
+    padding-bottom: 3.4rem;
+    padding-top: 5.5rem;
+
+    color: #3c3c3c;
+
+    h2 {
+      font-weight: 400;
+      font: normal normal normal 3.8rem "Open Sans";
+      letter-spacing: -0.76px;
+    }
+  }
+
+  .steps-container {
+    padding-inline: 21%;
+    padding-top: 7.3rem;
+    padding-bottom: 6.2rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: #f0f1f1;
+
+    .step-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      color: #3c3c3c;
+      width: 14rem;
+
+      .img-container {
+        width: 8.3rem;
+        height: 8.3rem;
+      }
+
+      .one {
+        background-image: url("Icon-1.svg");
+      }
+      .two {
+        background-image: url("Icon-2.svg");
+      }
+      .three {
+        background-image: url("Icon-3.svg");
+      }
+      .four {
+        background-image: url("Icon-4.svg");
+      }
+
+      .p-heading-step {
+        font: normal normal normal 1.8rem "Open Sans";
+        height: 4.8rem;
+        display: flex;
+        align-items: center;
+      }
+
+      .steps-line {
+        width: 60%;
+        height: 1px;
+        background-color: #3c3c3c;
+        border-radius: 20%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+      }
+
+      .p-p-step {
+        font: normal normal normal 1.6rem "Open Sans";
+      }
+    }
+  }
+
+  .steps-footer {
+    padding-top: 3.5rem;
+    padding-bottom: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    button {
+      height: 12rem;
+      width: 32rem;
+      padding: 0;
+      font: normal normal 300 3.6rem "Open Sans";
+      color: #3c3c3c;
+      background-color: transparent;
+      border: 0.75px solid #3c3c3c;
+      cursor: pointer;
+    }
+  }
+}

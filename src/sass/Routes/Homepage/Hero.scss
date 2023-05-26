@@ -1,0 +1,96 @@
+.hero {
+  padding-right: 7.5%;
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-top: 3.7rem;
+
+    .nav-login {
+      button {
+        padding: 1rem;
+        background-color: transparent;
+        border: none;
+        font: normal normal normal 1.3rem "Open Sans";
+        letter-spacing: 0px;
+        color: #737373;
+        cursor: pointer;
+        margin-left: 1rem;
+      }
+
+      .register {
+        border: 1px solid #fad648;
+      }
+    }
+
+    .nav-homepage {
+      padding-top: 2.5rem;
+      display: flex;
+      gap: 0.75rem;
+
+      a {
+        padding: 0.9rem 2rem;
+        font: normal normal normal 1.8rem "Open Sans";
+        color: #3c3c3c;
+        transition: all 0.5s ease-in-out;
+        cursor: pointer;
+        border: 0.75px solid transparent;
+
+        &:hover {
+          border: 0.75px solid #3c3c3c;
+        }
+      }
+    }
+  }
+
+  .hero-main-container {
+    display: flex;
+    height: 90rem; //do zmiany -> zwłaszcza w zakresie mediaqueries
+
+    .hero-img-container {
+      width: 50%;
+      background-image: url("public/Home-Hero-Image.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: right;
+    }
+
+    .hero-txt-container {
+      width: 50%;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .h1-hero {
+        font: normal normal normal 3.8rem "Open Sans";
+        letter-spacing: -0.76px;
+        color: #3c3c3c;
+
+        img {
+          padding-top: 2.5rem;
+        }
+      }
+
+      .btn-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 4.4rem;
+        padding-top: 6.5rem;
+
+        button {
+          height: 12rem;
+          width: 32rem;
+          padding: 0;
+          font: normal normal 300 3.6rem "Open Sans";
+          color: #3c3c3c;
+          background-color: transparent;
+          border: 0.75px solid #3c3c3c;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
