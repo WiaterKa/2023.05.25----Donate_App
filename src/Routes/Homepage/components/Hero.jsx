@@ -13,7 +13,7 @@ function Hero() {
           <Link to="hero" smooth={true} duration={1000}>
             Start
           </Link>
-          <Link to="hero" smooth={true} duration={1000}>
+          <Link to="project-info" smooth={true} duration={1000}>
             O co chodzi?
           </Link>
           <Link to="hero" smooth={true} duration={1000}>
