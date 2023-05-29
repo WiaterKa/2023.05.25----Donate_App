@@ -2,7 +2,7 @@ import React from "react";
 
 function AboutUs(props) {
   return (
-    <section className="about_us">
+    <section className="about_us" id="about_us">
       <div className="txt-box">
         <h2>O nas</h2>
         <img src="Decoration.svg" alt="decoration-svg" />

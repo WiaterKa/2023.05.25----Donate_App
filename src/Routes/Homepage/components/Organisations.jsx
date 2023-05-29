@@ -6,7 +6,7 @@ import NGOs from "./Organisations-subcomponents/NGOs";
 
 function Organisations(props) {
   return (
-    <section className="organisations">
+    <section className="organisations" id="organisations">
       <h2>Komu pomagamy?</h2>
       <img src="Decoration.svg" alt="decoration-svg" />
       <div className="options">
