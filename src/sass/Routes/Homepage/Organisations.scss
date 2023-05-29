@@ -1,0 +1,103 @@
+.organisations {
+  padding-inline: 19%;
+  padding-top: 7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h2 {
+    font: normal normal normal 3.3rem "Open Sans";
+    letter-spacing: -0.76px;
+    color: #3c3c3c;
+    opacity: 1;
+  }
+
+  .options {
+    padding-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    gap: 3rem;
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2.3rem 4.2rem;
+      font: normal normal normal 2.4rem "Open Sans";
+      color: #3c3c3c;
+      text-decoration: none;
+      width: 33.3%;
+      border: 0.75px solid transparent;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .active {
+      border: 0.75px solid #3c3c3c;
+    }
+  }
+
+  .p-main {
+    text-align: center;
+    font: normal normal normal 2.2rem "Open Sans";
+    color: #3c3c3c;
+    padding-inline: 20%;
+    padding-top: 7rem;
+    padding-bottom: 6.3rem;
+  }
+
+  .organisations-box {
+    display: flex;
+    flex-direction: column;
+
+    width: 120%;
+
+    .organisation-container {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 0.75px solid #3c3c3c;
+      align-items: center;
+
+      &:last-child {
+        border: none;
+      }
+
+      .details {
+        h3 {
+          text-align: left;
+          font: normal normal 300 2.6rem "Open Sans";
+          //   Merriweather
+          color: #3c3c3c;
+          padding-top: 3.1rem;
+        }
+
+        p {
+          font: italic normal 300 1.8rem "Open Sans";
+          padding-bottom: 3.1rem;
+        }
+      }
+
+      .needs {
+        font: normal normal 300 1.8rem "Open Sans";
+        color: #3c3c3c;
+      }
+    }
+  }
+  .pages-box {
+    display: flex;
+    gap: 2rem;
+    padding-top: 3rem;
+
+    p {
+      font: normal normal normal 1.8rem "Open Sans";
+      color: #3c3c3c;
+      border: 1px solid #707070;
+      padding: 1.3rem 1.5rem;
+      cursor: pointer;
+    }
+
+    // .active {
+    //   border: 1px solid #707070;
+    // }
+  }
+}
