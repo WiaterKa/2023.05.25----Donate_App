@@ -37,10 +37,27 @@
       width: 50%;
     }
 
+    .success-msg {
+      padding-top: 4rem;
+      color: green;
+      font-size: 1.8rem;
+      font-weight: bold;
+      width: 50%;
+      text-align: center;
+    }
+
     form {
       display: flex;
       flex-direction: column;
       width: 70%;
+
+      .error-msg {
+        color: red;
+      }
+
+      .error-input {
+        border-bottom: 1px solid red !important;
+      }
 
       .upper-form {
         display: flex;
@@ -51,16 +68,16 @@
           display: flex;
           flex-direction: column;
           width: 50%;
+          margin-bottom: 4rem;
         }
 
         input {
           border: none;
           border-bottom: 1px solid #707070;
           background-color: transparent;
-          font: normal normal normal 1.8rem "Open Sans";
+          font: normal normal normal 1.4rem "Open Sans";
           color: #3c3c3c;
           padding-top: 2rem;
-          margin-bottom: 4rem;
         }
       }
 
@@ -71,7 +88,7 @@
         textarea {
           margin-top: 1.2rem;
           background-color: transparent;
-          font: normal normal normal 1.8rem "Open Sans";
+          font: normal normal normal 1.4rem "Open Sans";
           color: #3c3c3c;
           border: none;
           border-bottom: 1px solid #707070;
@@ -84,7 +101,7 @@
         color: #3c3c3c;
       }
 
-      button {
+      .submit-btn {
         align-self: flex-end;
         font: normal normal 300 18px/32px "Open Sans";
         color: #000000;
