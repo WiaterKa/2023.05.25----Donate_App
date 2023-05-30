@@ -11,11 +11,11 @@ function Contact(props) {
           <div className="upper-form">
             <div className="form-box">
               <label htmlFor="name">Wpisz swoje imię</label>
-              <input type="text" />
+              <input type="text" name="name" />
             </div>
             <div className="form-box">
               <label htmlFor="email">Wpisz swój e-mail</label>
-              <input type="text" />
+              <input type="text" name="email"/>
             </div>
           </div>
           <div className="lower-form">
