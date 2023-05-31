@@ -18,7 +18,7 @@ function Fundations(props) {
     <>
       <div className="organisations-box">
         {pages[currentPage].map((element) => (
-          <div className="organisation-container">
+          <div className="organisation-container" key={element.name}>
             <div className="details">
               <h3>{element.name}</h3>
               <p>{element.description}</p>

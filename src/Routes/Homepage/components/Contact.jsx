@@ -54,7 +54,7 @@ function Contact(props) {
                 })}
                 className={errors.name ? "error-input" : ""}
               />
-              <p className="error-msg">{errors.firstName?.message}</p>
+              <p className="error-msg">{errors.name?.message}</p>
             </div>
 
             <div className="form-box">

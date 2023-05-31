@@ -10,7 +10,7 @@ function Organisations(props) {
       <h2>Komu pomagamy?</h2>
       <img src="Decoration.svg" alt="decoration-svg" />
       <div className="options">
-        <NavLink to="/fundations">Fundacjom</NavLink>
+        <NavLink to="/">Fundacjom</NavLink>
         <NavLink to="/ngos">Organizacjom pozarządowym</NavLink>
         <NavLink to="/fundarisings">Lokalnym zbiórkom</NavLink>
       </div>
@@ -20,7 +20,7 @@ function Organisations(props) {
         potrzebują.
       </p>
       <Routes>
-        <Route path="/fundations" element={<Fundations />} />
+        <Route path="/" element={<Fundations />} />
         <Route path="/ngos" element={<NGOs />} />
         <Route path="/fundarisings" element={<Fundarising />} />
       </Routes>
