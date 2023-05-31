@@ -8,15 +8,26 @@
     padding-top: 3.7rem;
 
     .nav-login {
+      display: flex;
+      align-items: center;
+
+      .user {
+        font: normal normal normal 1.4rem "Open Sans";
+      }
+
       button {
         padding: 1rem;
         background-color: transparent;
         border: none;
         font: normal normal normal 1.3rem "Open Sans";
         letter-spacing: 0px;
-        color: #737373;
         cursor: pointer;
-        margin-left: 1rem;
+        margin-left: 1.5rem;
+      }
+
+      a {
+        color: #737373;
+        text-decoration: none;
       }
 
       .register {

@@ -5,10 +5,10 @@ import Hero from "./components/Hero";
 import Organisations from "./components/Organisations";
 import ProjectInfo from "./components/ProjectInfo";
 
-function Homepage(props) {
+function Homepage({user, setUser}) {
   return (
     <>
-      <Hero />
+      <Hero user={user} setUser={setUser}/>
       <ProjectInfo />
       <AboutUs />
       <Organisations />
