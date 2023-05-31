@@ -1,0 +1,53 @@
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-top: 3.7rem;
+
+  .nav-login {
+    display: flex;
+    align-items: center;
+
+    .user {
+      font: normal normal normal 1.4rem "Open Sans";
+    }
+
+    button {
+      padding: 1rem;
+      background-color: transparent;
+      border: none;
+      font: normal normal normal 1.3rem "Open Sans";
+      letter-spacing: 0px;
+      cursor: pointer;
+      margin-left: 1.5rem;
+    }
+
+    a {
+      color: #737373;
+      text-decoration: none;
+    }
+
+    .register {
+      border: 1px solid #fad648;
+    }
+  }
+
+  .nav-homepage {
+    padding-top: 2.5rem;
+    display: flex;
+    gap: 0.75rem;
+
+    a {
+      padding: 0.9rem 2rem;
+      font: normal normal normal 1.8rem "Open Sans";
+      color: #3c3c3c;
+      transition: all 0.5s ease-in-out;
+      cursor: pointer;
+      border: 0.75px solid transparent;
+
+      &:hover {
+        border: 0.75px solid #3c3c3c;
+      }
+    }
+  }
+}

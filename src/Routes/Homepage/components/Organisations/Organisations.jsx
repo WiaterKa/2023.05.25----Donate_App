@@ -1,8 +1,8 @@
 import React from "react";
 import { NavLink, Route, Routes } from "react-router-dom";
-import Fundarising from "./Organisations-subcomponents/Fundarising";
-import Fundations from "./Organisations-subcomponents/Fundations";
-import NGOs from "./Organisations-subcomponents/NGOs";
+import Fundarising from "./Fundarising";
+import Fundations from "./Fundations";
+import NGOs from "./NGOs";
 
 function Organisations(props) {
   return (

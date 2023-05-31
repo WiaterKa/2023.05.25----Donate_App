@@ -1,19 +1,23 @@
 import React from "react";
 import Navbar from "../../universal_components/Navbar";
 
-function Hero({ user, setUser }) {
+function HeroGA({ user, setUser }) {
   return (
-    <section className="hero" id="hero">
+    <section className="heroGA">
       <Navbar user={user} setUser={setUser} />
 
       <div className="hero-main-container">
-        <div className="hero-img-container"></div>
+        <div className="heroGA-img-container"></div>
         <div className="hero-txt-container">
           <h1 className="h1-hero">
-            Zacznij pomagać! <br />
-            Oddaj niechciane rzeczy w zaufane ręce <br />
+            Oddaj rzeczy, których już nie chcesz <br />
+            POTRZEBUJĄCYM
+            <br />
             <img src="Decoration.svg" alt="decoration-svg" />
           </h1>
+          <h2 className="h2_heroGA">
+            Wystarczą 4 proste kroki
+          </h2>
           <div className="btn-container">
             <button className="hero">ODDAJ RZECZY</button>
             <button className="hero">ZORGANIZUJ ZBIÓRKĘ</button>
@@ -24,4 +28,4 @@ function Hero({ user, setUser }) {
   );
 }
 
-export default Hero;
+export default HeroGA;

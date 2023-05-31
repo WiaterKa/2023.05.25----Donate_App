@@ -5,6 +5,7 @@ import { auth } from "../../config/firebase";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { NavLink } from "react-router-dom";
 import { useForm } from "react-hook-form";
+import Navbar from "../universal_components/Navbar";
 
 function Register({ user, setUser }) {
   const [email, setEmail] = useState("");
@@ -85,7 +86,6 @@ function Register({ user, setUser }) {
               className="login"
               onClick={() => console.log(auth.currentUser.email)}
             >
-              {" "}
               <NavLink to="/login">Zaloguj się </NavLink>
             </button>
             <button className="register" type="submit">
