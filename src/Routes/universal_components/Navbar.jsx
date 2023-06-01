@@ -20,7 +20,7 @@ function Navbar({ user, setUser }) {
         <div className="nav-login">
           <p className="user">{`Cześć ${user} !`}</p>
           <button className="login" onClick={() => console.log(auth)}>
-            <NavLink to="/giveaway/stepone">Oddaj rzeczy</NavLink>
+            <NavLink to="/giveaway">Oddaj rzeczy</NavLink>
           </button>
           <button
             className="register"

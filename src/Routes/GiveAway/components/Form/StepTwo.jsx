@@ -1,9 +1,6 @@
 import React from "react";
-import { useState } from "react";
 
-function StepTwo(props) {
-
-
+function StepTwo({ setBags }) {
   return (
     <article className="step-two">
       <h2>Podaj liczbę 60l worków, w które spakowałeś/aś rzeczy:</h2>
@@ -15,7 +12,6 @@ function StepTwo(props) {
           id="bags"
           onChange={(e) => {
             setBags(e.target.value);
-            console.log(bags);
           }}
         >
           <option value="0">-- wybierz --</option>

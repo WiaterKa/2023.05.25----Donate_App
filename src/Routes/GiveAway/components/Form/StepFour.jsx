@@ -1,17 +1,15 @@
 import React from "react";
 import { useState } from "react";
 
-function StepFour({}) {
-  //form one
-  const [street, setStreet] = useState("");
-  const [city, setCity] = useState("");
-  const [pc, setPc] = useState("");
-  const [mobile, setMobile] = useState("");
-
-  //form two
-  const [date, setDate] = useState("");
-  const [hour, setHour] = useState("");
-  const [message, setMessage] = useState("");
+function StepFour({
+  setStreet,
+  setCity,
+  setPc,
+  setMobile,
+  setDate,
+  setHour,
+  setMessage,
+}) {
 
   return (
     <article className="step-four">

@@ -1,8 +1,6 @@
 import React from "react";
-import { useState } from "react";
 
-function StepOne(props) {
-
+function StepOne({ setOptions }) {
   function handleChoice(e) {
     e.currentTarget.classList.toggle("active");
     const selectedOption = e.target.nextSibling.innerText;

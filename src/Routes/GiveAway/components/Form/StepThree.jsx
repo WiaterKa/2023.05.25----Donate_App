@@ -1,13 +1,9 @@
-import React, { useState } from "react";
-
 function StepThree({
   setLocation,
   selectedOption,
   setSelectedOption,
   setOrganisation,
 }) {
-
-
   const handleOptionClick = (option) => {
     setSelectedOption(option);
   };
