@@ -5,9 +5,9 @@
     display: flex;
     height: 90rem; //do zmiany -> zwłaszcza w zakresie mediaqueries
 
-    .hero-img-container {
+    .heroGA-img-container {
       width: 50%;
-      background-image: url("public/Home-Hero-Image.jpg");
+      background-image: url("Form-Hero-Image.jpg");
       background-size: cover;
       background-repeat: no-repeat;
       background-position: right;
@@ -27,6 +27,44 @@
 
         img {
           padding-top: 2.5rem;
+        }
+      }
+
+      .h2_heroGA {
+        font: normal normal 300 4rem "Open Sans";
+        color: #3c3c3c;
+        padding-bottom: 6rem;
+      }
+
+      .steps-container {
+        display: flex;
+        color: #3c3c3c;
+        gap: 2rem;
+
+        .step-box {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+          height: 15rem;
+          width: 15rem;
+          border: 1px solid black;
+          rotate: 45deg;
+
+          .txt-box {
+            rotate: -45deg;
+          }
+
+          h3 {
+            font: normal normal 300 3.2rem "Open Sans";
+          }
+
+          h4 {
+            font: normal normal 300 2.2rem "Open Sans";
+            height: 6rem;
+            width: 14rem;
+          }
         }
       }
     }

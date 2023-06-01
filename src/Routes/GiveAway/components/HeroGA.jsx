@@ -15,12 +15,31 @@ function HeroGA({ user, setUser }) {
             <br />
             <img src="Decoration.svg" alt="decoration-svg" />
           </h1>
-          <h2 className="h2_heroGA">
-            Wystarczą 4 proste kroki
-          </h2>
-          <div className="btn-container">
-            <button className="hero">ODDAJ RZECZY</button>
-            <button className="hero">ZORGANIZUJ ZBIÓRKĘ</button>
+          <h2 className="h2_heroGA">Wystarczą 4 proste kroki</h2>
+          <div className="steps-container">
+            <div className="step-box">
+              <div className="txt-box">
+                <h3>1</h3>
+                <h4> Wybierz rzeczy</h4>
+              </div>
+            </div>
+            <div className="step-box">
+              <div className="txt-box">
+                <h3>2</h3> <h4>Spakuj je w worki</h4>
+              </div>
+            </div>
+            <div className="step-box">
+              <div className="txt-box">
+                <h3>3</h3>
+                <h4> Wybierz fundację</h4>
+              </div>
+            </div>
+            <div className="step-box">
+              <div className="txt-box">
+                <h3>4</h3>
+                <h4>Zamów kuriera</h4>
+              </div>
+            </div>
           </div>
         </div>
       </div>
