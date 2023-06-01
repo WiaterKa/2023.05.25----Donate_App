@@ -6,7 +6,7 @@ function StepOne(props) {
   const [isChecked2, setChecked2] = useState(false);
   const [isChecked3, setChecked3] = useState(false);
   const [isChecked4, setChecked4] = useState(false);
-  const [options, setOptions] = useState([]);
+
 
   const handleToggle1 = () => {
     setChecked1(!isChecked1);

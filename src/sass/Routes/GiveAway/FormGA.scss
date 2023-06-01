@@ -23,11 +23,36 @@
     left: 0;
     z-index: 10;
 
+    article {
+      height: 45rem;
+    }
+
     .steps {
       font: normal normal 300 2.4rem "Open Sans";
       color: #3c3c3c;
     }
   }
+  .btn-container {
+    display: flex;
+    gap: 5rem;
+
+    .modifypage {
+      font: normal normal 300 2.4rem "Open Sans";
+      color: #000000;
+      padding: 2.3rem 6.3rem;
+      border: 0.75px solid #3c3c3c;
+      background-color: transparent;
+      margin-top: 15rem;
+      cursor: pointer;
+      max-width: 19rem;
+    }
+  }
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 //Step One
@@ -68,13 +93,45 @@
     }
   }
 }
-.nextpage {
-  font: normal normal 300 2.4rem "Open Sans";
-  color: #000000;
-  padding: 2.3rem 6.3rem;
-  border: 0.75px solid #3c3c3c;
-  background-color: transparent;
-  margin-top: 15rem;
-  cursor: pointer;
-  max-width: 19rem;
+//Step Two
+
+.step-two {
+  h2 {
+    font: normal normal 600 3.6rem "Open Sans";
+    color: #000000;
+    padding-top: 7rem;
+    padding-bottom: 4rem;
+  }
+
+  .select-box {
+    display: flex;
+    gap: 2.6rem;
+    font: normal normal 300 2.4rem "Open Sans";
+    color: #000000;
+    align-items: center;
+
+    select {
+      width: 30rem;
+      height: 5rem;
+      background-color: transparent;
+      text-align: center;
+      font: normal normal 300 2.4rem "Open Sans";
+      //   appearance: none;
+      //   -webkit-appearance: none;
+      //   -moz-appearance: none;
+      position: relative;
+    }
+    // select::after {
+    //   content: "";
+    //   height: 20rem;
+    //   width: 20rem;
+    //   background-color: red;
+    //   background-image: url("Icon-Arrow-Up.svg");
+    //   background-repeat: no-repeat;
+    //   background-position: right center;
+    //   padding-right: 20px;
+    //   position: absolute;
+    //   right: 0;
+    // }
+  }
 }
