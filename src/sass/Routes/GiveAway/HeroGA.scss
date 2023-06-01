@@ -1,9 +1,8 @@
 .heroGA {
-  padding-right: 7.5%;
-
   .hero-main-container {
     display: flex;
     height: 90rem; //do zmiany -> zwłaszcza w zakresie mediaqueries
+    padding-right: 7.5%;
 
     .heroGA-img-container {
       width: 50%;
@@ -67,6 +66,23 @@
           }
         }
       }
+    }
+  }
+
+  .warning {
+    background-color: #fad648;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    padding-left: 14rem;
+
+    h2 {
+      font: normal normal 600 3.6rem "Open Sans";
+      color: #000000;
+    }
+
+    p {
+      font: normal normal normal 2.2rem "Open Sans";
+      color: #3c3c3c;
     }
   }
 }

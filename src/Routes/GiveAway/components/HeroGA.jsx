@@ -43,6 +43,13 @@ function HeroGA({ user, setUser }) {
           </div>
         </div>
       </div>
+      <div className="warning">
+        <h2>Wazne!</h2>
+        <p>
+          Uzupełnij szczegóły dotyczące Twoich rzeczy. Dzięki temu będziemy
+          wiedzieć komu najlepiej je przekazać.
+        </p>
+      </div>
     </section>
   );
 }
