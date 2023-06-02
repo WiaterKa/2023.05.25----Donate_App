@@ -33,7 +33,11 @@ function Fundations(props) {
           {pages.map((page, index) => {
             let number = index;
             return (
-              <p key={index} onClick={() => setCurrentPage(index)}>
+              <p
+                className={currentPage === index ? "activePage" : ""}
+                key={index}
+                onClick={() => setCurrentPage(index)}
+              >
                 {number + 1}
               </p>
             );

@@ -1,7 +1,11 @@
 import React from "react";
 import Navbar from "../../universal_components/Navbar";
+import { useNavigate } from "react-router-dom";
+import handleRedirection from "../../../helpers/handleRedirection";
 
 function Hero({ user, setUser }) {
+  const navigate = useNavigate();
+
   return (
     <section className="hero" id="hero">
       <Navbar user={user} setUser={setUser} />
@@ -15,7 +19,9 @@ function Hero({ user, setUser }) {
             <img src="Decoration.svg" alt="decoration-svg" />
           </h1>
           <div className="btn-container">
-            <button className="hero">ODDAJ RZECZY</button>
+            <button onClick={() => handleRedirection()} className="hero">
+              ODDAJ RZECZY
+            </button>
             <button className="hero">ZORGANIZUJ ZBIÓRKĘ</button>
           </div>
         </div>

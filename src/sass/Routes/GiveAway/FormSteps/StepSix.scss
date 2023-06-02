@@ -1,0 +1,14 @@
+.success {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  h2 {
+    font: normal normal 300 4rem "Open Sans";
+    letter-spacing: -0.8px;
+    color: #3c3c3c;
+    text-align: center;
+    padding-bottom: 3.1rem;
+  }
+}

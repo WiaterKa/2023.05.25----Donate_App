@@ -3,8 +3,11 @@ import { useState } from "react";
 import StepFive from "./StepFive";
 import StepFour from "./StepFour";
 import StepOne from "./StepOne";
+import StepSix from "./StepSix";
 import StepThree from "./StepThree";
 import StepTwo from "./StepTwo";
+import { addDoc, collection } from "firebase/firestore";
+import { db } from "../../../../config/firebase";
 
 function FormGA(props) {
   const [step, setStep] = useState(1);
@@ -25,6 +28,24 @@ function FormGA(props) {
   const [date, setDate] = useState("");
   const [hour, setHour] = useState("");
   const [message, setMessage] = useState("");
+
+  const onSubmitOrder = async () => {
+    const orderCollection = collection(db, "Orders");
+    await addDoc(orderCollection, {
+      bags: bags,
+      city: city,
+      date: date,
+      hour: hour,
+      location: location,
+      message: message,
+      mobile: mobile,
+      options: options,
+      organisation: organisation,
+      pc: pc,
+      selectedOption: selectedOption,
+      street: street,
+    });
+  };
 
   return (
     <section className="formGA">
@@ -70,8 +91,10 @@ function FormGA(props) {
           />
         )}
 
+        {step === 6 && <StepSix />}
+
         <div className="btn-container">
-          {step > 1 && (
+          {step > 1 && step < 6 && (
             <button
               className="modifypage"
               onClick={() => setStep((prevStep) => prevStep - 1)}
@@ -86,6 +109,18 @@ function FormGA(props) {
               onClick={() => setStep((prevStep) => prevStep + 1)}
             >
               Dalej
+            </button>
+          )}
+
+          {step === 5 && (
+            <button
+              className="modifypage"
+              onClick={() => {
+                onSubmitOrder();
+                setStep((prevStep) => prevStep + 1);
+              }}
+            >
+              Potwierdzam
             </button>
           )}
         </div>

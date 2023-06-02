@@ -19,6 +19,14 @@ html {
 @import "./Routes/Homepage/Organisations";
 @import "./Routes/Homepage/Contact";
 @import "./Routes/Login/Login_Register";
+@import "./Routes/Logout/Logout.scss";
 @import "./Universal_components/Navbar";
+@import "./Routes/Error/Error.scss";
 @import "./Routes/GiveAway/HeroGA";
 @import "./Routes/GiveAway/FormGA";
+@import "./Routes/GiveAway/FormSteps/StepOne.scss";
+@import "./Routes/GiveAway/FormSteps/StepTwo.scss";
+@import "./Routes/GiveAway/FormSteps/StepThree.scss";
+@import "./Routes/GiveAway/FormSteps/StepFour.scss";
+@import "./Routes/GiveAway/FormSteps/StepFive.scss";
+@import "./Routes/GiveAway/FormSteps/StepSix.scss";

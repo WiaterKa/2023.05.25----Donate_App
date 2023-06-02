@@ -1,0 +1,37 @@
+.error {
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  letter-spacing: -0.8px;
+  color: #3c3c3c;
+  text-align: center;
+
+  h1 {
+    font: normal normal 600 8rem "Open Sans";
+    padding-bottom: 3.1rem;
+  }
+
+  h2 {
+    font: normal normal 300 4rem "Open Sans";
+    padding-bottom: 3.1rem;
+  }
+
+  img {
+    padding-bottom: 3.1rem;
+  }
+
+  button {
+    font: normal normal 300 2.4rem "Open Sans";
+    color: #000000;
+    padding: 2.3rem 5.3rem;
+    border: 0.75px solid #3c3c3c;
+    background-color: transparent;
+    cursor: pointer;
+    max-width: 19rem;
+    display: flex;
+    justify-content: center;
+  }
+}

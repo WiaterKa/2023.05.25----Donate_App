@@ -1,0 +1,63 @@
+.step-three {
+  display: flex;
+  flex-direction: column;
+
+  .location-lbl {
+    font: normal normal 600 3.6rem "Open Sans";
+    color: #000000;
+  }
+
+  select {
+    width: 30rem;
+    height: 5rem;
+    background-color: transparent;
+    text-align: center;
+    font: normal normal 300 2.4rem "Open Sans";
+    position: relative;
+    color: #000000;
+    margin-top: 2rem;
+    cursor: pointer;
+  }
+
+  h3 {
+    font: normal normal 600 2.4rem "Open Sans";
+    color: #000000;
+    padding-bottom: 2rem;
+    padding-top: 5rem;
+  }
+  .adressee {
+    display: flex;
+    flex-wrap: wrap;
+
+    p {
+      font: normal normal 300 2.4rem "Open Sans";
+      color: #000000;
+      padding: 1.1rem 2.6rem;
+      border: 0.75px solid #3c3c3c;
+      background-color: transparent;
+      margin-bottom: 2.4rem;
+      margin-right: 2.4rem;
+      cursor: pointer;
+    }
+
+    .active {
+      background-color: #fad648;
+    }
+  }
+
+  .organisation-lbl {
+    font: normal normal 600 2.4rem "Open Sans";
+  }
+
+  input {
+    margin-top: 2rem;
+    background-color: transparent;
+    width: 80%;
+    height: 6rem;
+    border: 0.75px solid #3c3c3c;
+    font: normal normal 300 1.8rem "Open Sans";
+    padding-left: 1rem;
+    color: #3c3c3c;
+    cursor: pointer;
+  }
+}

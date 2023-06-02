@@ -4,12 +4,13 @@ import {
   fetchSignInMethodsForEmail,
   getAuth,
   signInWithEmailAndPassword,
+  getIdToken,
 } from "firebase/auth";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 
-function Login({ user, setUser }) {
+function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [errorMsg, setErrorMsg] = useState("");
@@ -17,14 +18,17 @@ function Login({ user, setUser }) {
 
   const signIn = async (data) => {
     try {
-      const { email, password } = data;
       const auth = getAuth();
+      const { email, password } = data;
       const signInMethods = await fetchSignInMethodsForEmail(auth, email);
 
       if (signInMethods.length > 0) {
         // Użytkownik istnieje w bazie danych Firebase, można go zalogować
         await signInWithEmailAndPassword(auth, email, password);
-        setUser(auth.currentUser.email);
+
+        const token = await auth.currentUser.getIdToken();
+        localStorage.setItem("token", token);
+        localStorage.setItem("user", auth.currentUser.email);
         navigate("/");
       } else {
         setErrorMsg("Podano błędne dane. Spróbuj ponownie");
@@ -45,7 +49,7 @@ function Login({ user, setUser }) {
         <form
           onSubmit={(e) => {
             e.preventDefault();
-            signIn();
+            signIn({ email, password });
             setUser(auth.currentUser.email);
             navigate("/");
           }}

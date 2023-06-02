@@ -4,12 +4,15 @@ import { NavLink } from "react-router-dom";
 import { auth } from "../../config/firebase";
 import { signOut } from "firebase/auth";
 
-function Navbar({ user, setUser }) {
+function Navbar() {
   return (
     <nav>
-      {user === "" ? (
+      {localStorage.user === undefined ? (
         <div className="nav-login">
-          <button className="login">
+          <button
+            className="login"
+            onClick={() => console.log(auth.currentUser.email)}
+          >
             <NavLink to="/login">Zaloguj się</NavLink>
           </button>
           <button className="register">
@@ -18,7 +21,7 @@ function Navbar({ user, setUser }) {
         </div>
       ) : (
         <div className="nav-login">
-          <p className="user">{`Cześć ${user} !`}</p>
+          <p className="user">{`Cześć ${localStorage.user} !`}</p>
           <button className="login" onClick={() => console.log(auth)}>
             <NavLink to="/giveaway">Oddaj rzeczy</NavLink>
           </button>
@@ -27,14 +30,20 @@ function Navbar({ user, setUser }) {
             onClick={() => {
               signOut(auth)
                 .then(() => {
-                  setUser("");
+                  localStorage.removeItem("token");
+                  localStorage.removeItem("user");
+                  console.log(
+                    localStorage,
+                    localStorage.token,
+                    localStorage.email
+                  );
                 })
                 .catch((error) => {
                   // An error happened.
                 });
             }}
           >
-            <NavLink to="/register">Wyloguj</NavLink>
+            <NavLink to="/logout">Wyloguj</NavLink>
           </button>
         </div>
       )}

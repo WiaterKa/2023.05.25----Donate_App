@@ -1,6 +1,9 @@
 import React from "react";
+import handleRedirection from "../../../helpers/handleRedirection";
+import { useNavigate } from "react-router-dom";
 
 function ProjectInfo(props) {
+  const navigate = useNavigate();
   return (
     <section className="project-info" id="project-info">
       <div className="key-takeaways">
@@ -65,7 +68,7 @@ function ProjectInfo(props) {
       </div>
 
       <div className="steps-footer">
-        <button>ODDAJ RZECZY</button>
+        <button onClick={() => handleRedirection()}>ODDAJ RZECZY</button>
       </div>
     </section>
   );

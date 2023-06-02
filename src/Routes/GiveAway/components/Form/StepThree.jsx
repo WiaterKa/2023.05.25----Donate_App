@@ -22,16 +22,16 @@ function StepThree({
         }}
       >
         <option value="0">-- wybierz --</option>
-        <option value="1">Warszawa</option>
-        <option value="2">Kraków</option>
-        <option value="3">Katowice</option>
-        <option value="4">Wrocław</option>
-        <option value="5">Poznań</option>
-        <option value="6">Szczecin</option>
-        <option value="7">Gdańsk</option>
-        <option value="8">Olsztyn</option>
-        <option value="9">Lublin</option>
-        <option value="10">Rzeszów</option>
+        <option value="Warszawa">Warszawa</option>
+        <option value="Kraków">Kraków</option>
+        <option value="Katowice">Katowice</option>
+        <option value="Wrocław">Wrocław</option>
+        <option value="Poznań">Poznań</option>
+        <option value="Szczecin">Szczecin</option>
+        <option value="Gdańsk">Gdańsk</option>
+        <option value="Olsztyn">Olsztyn</option>
+        <option value="Lublin">Lublin</option>
+        <option value="Rzeszów">Rzeszów</option>
       </select>
 
       <h3>Komu chcesz pomóc?</h3>

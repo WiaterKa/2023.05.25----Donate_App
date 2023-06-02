@@ -1,0 +1,56 @@
+.step-four {
+  color: #000000;
+
+  h2 {
+    font: normal normal 600 3.6rem "Open Sans";
+    padding-top: 7rem;
+  }
+
+  .form-container {
+    display: flex;
+    gap: 5rem;
+
+    .form-one,
+    .form-two {
+      display: flex;
+      flex-direction: column;
+      padding-top: 5rem;
+      width: 50%;
+
+      h3 {
+        font: normal normal 600 2.4rem "Open Sans";
+        margin-bottom: 2rem;
+      }
+
+      .form-box {
+        display: flex;
+        align-items: center;
+        margin-bottom: 2rem;
+
+        label {
+          font: normal normal 300 2rem "Open Sans";
+          width: 35%;
+        }
+
+        input {
+          width: 65%;
+          height: 4rem;
+          background-color: transparent;
+          border: 0.75px solid #3c3c3c;
+          cursor: pointer;
+          font: normal normal 300 1.3rem "Open Sans";
+          padding-left: 0.6rem;
+        }
+
+        #textarea {
+          width: 65%;
+          background-color: transparent;
+          border: 0.75px solid #3c3c3c;
+          cursor: pointer;
+          font: normal normal 300 1.3rem "Open Sans";
+          padding-left: 0.6rem;
+        }
+      }
+    }
+  }
+}

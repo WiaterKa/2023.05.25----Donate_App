@@ -20,7 +20,7 @@
     text-align: center;
     gap: 3rem;
 
-    a {
+    p {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -31,6 +31,13 @@
       width: 33.3%;
       border: 0.75px solid transparent;
       transition: all 0.3s ease-in-out;
+      pointer-events: auto;
+      cursor: pointer;
+
+      &:hover {
+        box-shadow: 14px 8px 14px 12px rgba(199, 199, 199, 0.87);
+        border: 0.75px solid #3c3c3c;
+      }
     }
 
     .active {
@@ -92,9 +99,13 @@
     p {
       font: normal normal normal 1.8rem "Open Sans";
       color: #3c3c3c;
-      border: 1px solid #707070;
       padding: 1.3rem 1.5rem;
       cursor: pointer;
+      border: 1px solid transparent;
+    }
+
+    .activePage {
+      border: 1px solid #707070;
     }
 
     // .active {

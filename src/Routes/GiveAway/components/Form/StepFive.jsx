@@ -15,7 +15,7 @@ function StepFive({
   message,
 }) {
   return (
-    <article className="step-five">
+    <article className="step-five" style={{ height: "70rem", width: "140%" }}>
       <h2>Podsumowanie Twojej darowizny</h2>
 
       <h3>Oddajesz:</h3>

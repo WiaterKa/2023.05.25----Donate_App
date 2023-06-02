@@ -5,9 +5,8 @@ import { auth } from "../../config/firebase";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { NavLink } from "react-router-dom";
 import { useForm } from "react-hook-form";
-import Navbar from "../universal_components/Navbar";
 
-function Register({ user, setUser }) {
+function Register() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [passwordCheck, setPasswordCheck] = useState("");
@@ -34,7 +33,9 @@ function Register({ user, setUser }) {
           onSubmit={handleSubmit(async () => {
             if (password === passwordCheck && password !== "") {
               await registerUser();
-              setUser(auth.currentUser.email);
+              const token = await auth.currentUser.getIdToken();
+              localStorage.setItem("token", token);
+              localStorage.setItem("user", auth.currentUser.email);
               navigate("/");
             }
           })}
