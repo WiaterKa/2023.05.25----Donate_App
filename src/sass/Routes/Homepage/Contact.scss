@@ -111,6 +111,10 @@
         padding: 1.3rem 5.2rem;
         margin-top: 4.4rem;
         cursor: pointer;
+
+        &:hover {
+          box-shadow: 14px 8px 14px 12px rgba(199, 199, 199, 0.87);
+        }
       }
     }
 

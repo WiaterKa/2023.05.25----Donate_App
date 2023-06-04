@@ -1,8 +1,6 @@
 .hero {
   padding-right: 7.5%;
 
-
-
   .hero-main-container {
     display: flex;
     height: 90rem; //do zmiany -> zwłaszcza w zakresie mediaqueries
@@ -48,6 +46,12 @@
           background-color: transparent;
           border: 0.75px solid #3c3c3c;
           cursor: pointer;
+
+          &:hover {
+            box-shadow: 14px 8px 14px 12px rgba(199, 199, 199, 0.87);
+            border: 0.75px solid transparent;
+            transform: rotate(360deg);
+          }
         }
       }
     }
