@@ -7,32 +7,32 @@ function Organisations(props) {
   const [tab, setTab] = useState("fundation");
   return (
     <section className="organisations" id="organisations">
-      <h2>Komu pomagamy?</h2>
+      <h2>Whom are we helping?</h2>
       <img src="Decoration.svg" alt="decoration-svg" />
       <div className="options">
         <p
           className={tab === "fundation" ? "active" : ""}
           onClick={() => setTab("fundation")}
         >
-          Fundacjom
+          Fundations
         </p>
         <p
           className={tab === "ngo" ? "active" : ""}
           onClick={() => setTab("ngo")}
         >
-          Organizacjom pozarządowym
+          Non-profit organisations
         </p>
         <p
           className={tab === "fundarising" ? "active" : ""}
           onClick={() => setTab("fundarising")}
         >
-          Lokalnym zbiórkom
+          Local fundraisers
         </p>
       </div>
       <p className="p-main">
-        W naszej bazie znajdziesz listę zweryfikowanych Fundacji, z którymi
-        współpracujemy. Możesz sprawdzić czym się zajmują, komu pomagają i czego
-        potrzebują.
+        In our database you will find a list of trusted and verified foundations
+        with which we we cooperate with. You can check what they do, who they
+        help and what they need they need.
       </p>
 
       {tab === "fundation" && <Fundations />}

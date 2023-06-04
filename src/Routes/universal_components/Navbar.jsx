@@ -12,17 +12,17 @@ function Navbar() {
             className="login"
             onClick={() => console.log(auth.currentUser.email)}
           >
-            <NavLink to="/login">Zaloguj się</NavLink>
+            <NavLink to="/login">Log in</NavLink>
           </button>
           <button className="register">
-            <NavLink to="/register">Załóz konto</NavLink>
+            <NavLink to="/register">Register</NavLink>
           </button>
         </div>
       ) : (
         <div className="nav-login">
-          <p className="user">{`Cześć ${localStorage.user} !`}</p>
+          <p className="user">{`Hello ${localStorage.user} !`}</p>
           <button className="login" onClick={() => console.log(auth)}>
-            <NavLink to="/giveaway">Oddaj rzeczy</NavLink>
+            <NavLink to="/giveaway">Donate</NavLink>
           </button>
           <button
             className="register"
@@ -42,7 +42,7 @@ function Navbar() {
                 });
             }}
           >
-            <NavLink to="/logout">Wyloguj</NavLink>
+            <NavLink to="/logout">Log out</NavLink>
           </button>
         </div>
       )}

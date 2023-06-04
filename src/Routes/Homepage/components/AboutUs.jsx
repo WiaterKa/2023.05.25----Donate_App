@@ -4,12 +4,12 @@ function AboutUs(props) {
   return (
     <section className="about_us" id="about_us">
       <div className="txt-box">
-        <h2>O nas</h2>
+        <h2>About us</h2>
         <img src="Decoration.svg" alt="decoration-svg" />
         <p>
-          Nori grape silver beet broccoli kombu beet greens fava bean potato
-          quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil
-          turnip greens parsnip.
+          Our mission is to collect donated items from individuals who wish to
+          contribute to meaningful causes and distribute them efficiently to
+          various organizations that support the less fortunate.
         </p>
         <img className="signature" src="Signature.svg" alt="signature" />
       </div>

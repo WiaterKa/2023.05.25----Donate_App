@@ -15,7 +15,7 @@ function StepOne({ setOptions }) {
 
   return (
     <article className="step-one">
-      <h2>Zaznacz, co chcesz oddać:</h2>
+      <h2>Choose what you want to danate:</h2>
 
       <div className="options-container">
         <div className="option-box">
@@ -25,9 +25,7 @@ function StepOne({ setOptions }) {
             }}
             data-color="checkbox"
           ></div>
-          <p className="option">
-            ubrania, które nadają się do ponownego użycia
-          </p>
+          <p className="option">clothes that are reusable</p>
         </div>
         <div className="option-box">
           <div
@@ -36,7 +34,7 @@ function StepOne({ setOptions }) {
               handleChoice(e);
             }}
           ></div>
-          <p className="option">ubrania do wyrzucenia</p>
+          <p className="option">discard clothes</p>
         </div>
         <div className="option-box">
           <div
@@ -45,7 +43,7 @@ function StepOne({ setOptions }) {
               handleChoice(e);
             }}
           ></div>
-          <p className="option">ksiązki</p>
+          <p className="option">books</p>
         </div>
         <div className="option-box">
           <div
@@ -54,7 +52,7 @@ function StepOne({ setOptions }) {
             }}
             data-color="checkbox"
           ></div>
-          <p className="option">inne</p>
+          <p className="option">other</p>
         </div>
       </div>
     </article>

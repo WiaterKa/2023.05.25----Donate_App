@@ -6,11 +6,28 @@
   flex-direction: column;
   align-items: center;
 
+  @media only screen and (max-width: 960px) {
+    padding-inline: 10%;
+  }
+
+  @media only screen and (max-width: 550px) {
+    padding-inline: 5%;
+    padding-bottom: 10rem;
+  }
+
   h2 {
     font: normal normal normal 3.3rem "Open Sans";
     letter-spacing: -0.76px;
     color: #3c3c3c;
-    opacity: 1;
+
+    @media only screen and (max-width: 960px) {
+      font-size: 2.5rem;
+    }
+
+    @media only screen and (max-width: 500px) {
+      font-size: 2rem;
+      padding-bottom: 2rem;
+    }
   }
 
   .options {
@@ -19,6 +36,11 @@
     justify-content: space-between;
     text-align: center;
     gap: 3rem;
+
+    @media only screen and (max-width: 660px) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
 
     p {
       display: flex;
@@ -33,6 +55,16 @@
       transition: all 0.3s ease-in-out;
       pointer-events: auto;
       cursor: pointer;
+
+      @media only screen and (max-width: 960px) {
+        padding: 2rem 2.2rem;
+        font-size: 2rem;
+      }
+
+      @media only screen and (max-width: 550px) {
+        font-size: 1.5rem;
+        padding-inline: 0.5rem;
+      }
 
       &:hover {
         box-shadow: 14px 8px 14px 12px rgba(199, 199, 199, 0.87);
@@ -52,6 +84,14 @@
     padding-inline: 20%;
     padding-top: 7rem;
     padding-bottom: 6.3rem;
+
+    @media only screen and (max-width: 960px) {
+      padding-inline: 0;
+    }
+
+    @media only screen and (max-width: 550px) {
+      font-size: 1.5rem;
+    }
   }
 
   .organisations-box {
@@ -60,11 +100,16 @@
 
     width: 120%;
 
+    @media only screen and (max-width: 760px) {
+      width: 100%;
+    }
+
     .organisation-container {
       display: flex;
       justify-content: space-between;
       border-bottom: 0.75px solid #3c3c3c;
       align-items: center;
+      gap: 2rem;
 
       &:last-child {
         border: none;
@@ -77,17 +122,44 @@
           //   Merriweather
           color: #3c3c3c;
           padding-top: 3.1rem;
+
+          @media only screen and (max-width: 960px) {
+            font-size: 2rem;
+          }
+
+          @media only screen and (max-width: 550px) {
+            font-size: 1.5rem;
+          }
         }
 
         p {
           font: italic normal 300 1.8rem "Open Sans";
           padding-bottom: 3.1rem;
+
+          @media only screen and (max-width: 960px) {
+            font: 1.6rem;
+          }
+
+          @media only screen and (max-width: 550px) {
+            font-size: 1.3rem;
+          }
         }
       }
 
       .needs {
         font: normal normal 300 1.8rem "Open Sans";
         color: #3c3c3c;
+        display: flex;
+        justify-content: flex-end;
+        width: 50%;
+
+        @media only screen and (max-width: 960px) {
+          font-size: 1.6rem;
+        }
+
+        @media only screen and (max-width: 550px) {
+          font-size: 1.3rem;
+        }
       }
     }
   }

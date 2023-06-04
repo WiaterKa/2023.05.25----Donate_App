@@ -1,28 +1,43 @@
 import React from "react";
 import { Link } from "react-scroll";
 import Navbar from "../../universal_components/Navbar";
+import { useState } from "react";
 
 function HeroNavbar() {
+  const [isActiveBurg, setsActiveBurg] = useState("");
+
+  const handleToggle = () => {
+    setsActiveBurg(!isActiveBurg);
+  };
+
   return (
     <nav>
       <Navbar />
-      <div className="nav-homepage">
+      <div className={`nav-homepage ${isActiveBurg ? "active" : ""}`}>
         <Link to="hero" smooth={true} duration={1000}>
           Start
         </Link>
         <Link to="project-info" smooth={true} duration={12000}>
-          O co chodzi?
+          About the project
         </Link>
         <Link to="about_us" smooth={true} duration={1000}>
-          O nas
+          About us
         </Link>
         <Link to="organisations" smooth={true} duration={1000}>
-          Fundacja i organizacje
+          Fundations and Organisations
         </Link>
         <Link to="contact" smooth={true} duration={1000}>
-          Kontakt
+          Contact
         </Link>
       </div>
+      <button
+        className={`burger ${isActiveBurg ? "active" : ""}`}
+        onClick={handleToggle}
+      >
+        <div className="line"></div>
+        <div className="line"></div>
+        <div className="line"></div>
+      </button>
     </nav>
   );
 }

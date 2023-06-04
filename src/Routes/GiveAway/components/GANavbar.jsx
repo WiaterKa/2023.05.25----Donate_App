@@ -8,12 +8,12 @@ function GANavbar() {
     <nav>
       <Navbar />
       <div className="nav-homepage">
-        <NavLink to="/">Strona Główna</NavLink>
-        <NavLink to="/orders">Twoje zamówienia</NavLink>
-        <NavLink to="/addorganisation">Dodaj organizację</NavLink>
-        <NavLink to="/addorganisation">Zbiórki</NavLink>
+        <NavLink to="/">Home Page</NavLink>
+        <NavLink to="/orders">Your donations</NavLink>
+        <NavLink to="/addorganisation">Add organisation</NavLink>
+        <NavLink to="/addorganisation">Fundarisers</NavLink>
         <Link to="contact" smooth={true} duration={1000}>
-          Kontakt
+          Contact
         </Link>
       </div>
     </nav>

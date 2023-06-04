@@ -2,11 +2,23 @@
   .key-takeaways {
     display: flex;
     justify-content: space-between;
-    padding-inline: 8.5%;
+    padding-inline: 4.5%;
     padding-top: 4.6rem;
     padding-bottom: 8.4rem;
     background: transparent url("3 Columns Background.png") 0% 0% no-repeat
       padding-box;
+
+    @media only screen and (max-width: 1300px) {
+      padding-right: 5%;
+      gap: 3rem;
+    }
+
+    @media only screen and (max-width: 550px) {
+      height: 50rem;
+      background-size: cover;
+      gap: 1rem;
+      padding-inline: 2.5%;
+    }
 
     .info-box {
       width: 33.4rem;
@@ -18,6 +30,10 @@
       h2 {
         font: normal normal 300 9rem "Open Sans";
         color: #5e5322;
+
+        @media only screen and (max-width: 960px) {
+          font-size: 6rem;
+        }
       }
 
       h3 {
@@ -26,12 +42,25 @@
         color: #3c3c3c;
         padding-bottom: 2.8rem;
         padding-top: 1rem;
+
+        @media only screen and (max-width: 960px) {
+          font-size: 1.5rem;
+          height: 6rem;
+        }
       }
 
       p {
         font: normal normal normal 1.6rem "Open Sans";
         letter-spacing: -0.32px;
         color: #3c3c3c;
+
+        @media only screen and (max-width: 960px) {
+          font-size: 1.3rem;
+        }
+
+        @media only screen and (max-width: 960px) {
+          font-size: 1rem;
+        }
       }
     }
   }
@@ -50,6 +79,11 @@
       font-weight: 400;
       font: normal normal normal 3.8rem "Open Sans";
       letter-spacing: -0.76px;
+
+      @media only screen and (max-width: 960px) {
+        font-size: 3rem;
+        text-align: center;
+      }
     }
   }
 
@@ -60,6 +94,13 @@
     display: flex;
     justify-content: space-between;
     background-color: #f0f1f1;
+
+    @media only screen and (max-width: 960px) {
+      padding-inline: 7.5%;
+    }
+    @media only screen and (max-width: 550px) {
+      padding-inline: 1rem;
+    }
 
     .step-box {
       display: flex;
@@ -92,6 +133,10 @@
         height: 4.8rem;
         display: flex;
         align-items: center;
+
+        @media only screen and (max-width: 550px) {
+          font-size: 1.5rem;
+        }
       }
 
       .steps-line {
@@ -105,6 +150,10 @@
 
       .p-p-step {
         font: normal normal normal 1.6rem "Open Sans";
+
+        @media only screen and (max-width: 550px) {
+          font-size: 1.3rem;
+        }
       }
     }
   }
@@ -125,6 +174,12 @@
       background-color: transparent;
       border: 0.75px solid #3c3c3c;
       cursor: pointer;
+
+      @media only screen and (max-width: 960px) {
+        height: 10rem;
+        width: 25rem;
+        font-size: 2.3rem;
+      }
 
       &:hover {
         box-shadow: 14px 8px 14px 12px rgba(199, 199, 199, 0.87);

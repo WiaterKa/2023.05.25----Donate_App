@@ -43,7 +43,7 @@ function Login() {
     <section className="login">
       <div className="wrapper">
         <div className="box-heading">
-          <h1>Zaloguj się</h1>
+          <h1>Log in</h1>
           <img src="Decoration.svg" alt="decoration-svg" />
         </div>
         <form
@@ -58,7 +58,7 @@ function Login() {
             <input type="text" onChange={(e) => setEmail(e.target.value)} />
             <p className="error-msg">{errorMsg}</p>
             <label className="password" htmlFor="password">
-              Hasło
+              Password
             </label>
             <input
               type="password"
@@ -70,10 +70,10 @@ function Login() {
           <div className="box-buttons">
             <button className="register">
               {" "}
-              <NavLink to="/register">Załóz konto </NavLink>
+              <NavLink to="/register">Register </NavLink>
             </button>
             <button className="login" type="submit">
-              Zaloguj się
+              Log in
             </button>
           </div>
         </form>

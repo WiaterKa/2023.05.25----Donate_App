@@ -50,7 +50,7 @@ function FormGA(props) {
   return (
     <section className="formGA">
       <div className="txt-container">
-        {step < 5 && <p className="steps">Krok {step}/4</p>}
+        {step < 5 && <p className="steps">Step {step}/4</p>}
 
         {step === 1 && <StepOne setOptions={setOptions} />}
         {step === 2 && <StepTwo setBags={setBags} />}
@@ -99,7 +99,7 @@ function FormGA(props) {
               className="modifypage"
               onClick={() => setStep((prevStep) => prevStep - 1)}
             >
-              Wstecz
+              Back
             </button>
           )}
 
@@ -108,7 +108,7 @@ function FormGA(props) {
               className="modifypage"
               onClick={() => setStep((prevStep) => prevStep + 1)}
             >
-              Dalej
+              Next
             </button>
           )}
 
@@ -120,7 +120,7 @@ function FormGA(props) {
                 setStep((prevStep) => prevStep + 1);
               }}
             >
-              Potwierdzam
+              Confirm
             </button>
           )}
         </div>

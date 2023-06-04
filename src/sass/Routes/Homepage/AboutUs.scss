@@ -3,6 +3,10 @@
   display: flex;
   max-width: 190rem;
 
+  @media only screen and (max-width: 550px) {
+    height: 70rem;
+  }
+
   .txt-box {
     width: 50%;
     display: flex;
@@ -14,12 +18,25 @@
     padding-bottom: 19%;
     background-color: #f0f1f1;
 
+    @media only screen and (max-width: 960px) {
+      justify-content: center;
+      padding-bottom: 0;
+    }
+
     h2 {
       font-size: 3.8rem;
       font-weight: normal;
       letter-spacing: -0.76px;
       color: #3c3c3c;
       padding-bottom: 3.9rem;
+
+      @media only screen and (max-width: 960px) {
+        font-size: 2.8rem;
+      }
+
+      @media only screen and (max-width: 550px) {
+        font-size: 2rem;
+      }
     }
 
     p {
@@ -29,10 +46,29 @@
       color: #3c3c3c;
       padding-top: 6.5rem;
       padding-bottom: 4rem;
+
+      @media only screen and (max-width: 960px) {
+        font-size: 2rem;
+      }
+
+      @media only screen and (max-width: 550px) {
+        font-size: 1.5rem;
+      }
+    }
+
+    [alt="decoration-svg"] {
+      @media only screen and (max-width: 550px) {
+        width: 80%;
+      }
     }
 
     .signature {
       align-self: flex-end;
+
+      @media only screen and (max-width: 550px) {
+        height: 8rem;
+        width: 8rem;
+      }
     }
   }
 
@@ -41,5 +77,9 @@
     background-image: url("People.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+
+    @media only screen and (max-width: 960px) {
+      background-position: center;
+    }
   }
 }

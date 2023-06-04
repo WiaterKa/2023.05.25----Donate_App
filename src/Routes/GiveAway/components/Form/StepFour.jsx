@@ -10,44 +10,45 @@ function StepFour({
   setHour,
   setMessage,
 }) {
-
   return (
     <article className="step-four">
-      <h2>Podaj adres oraz termin odbioru rzecz przez kuriera</h2>
+      <h2>
+        Enter the address and date when the courier shall pick up the items
+      </h2>
 
       <div className="form-container">
         <div className="form-one">
-          <h3>Adres odbioru:</h3>
+          <h3>Collection address:</h3>
           <div className="form-box">
-            <label htmlFor="street">Ulica</label>
+            <label htmlFor="street">Street</label>
             <input type="text" onChange={(e) => setStreet(e.target.value)} />
           </div>
           <div className="form-box">
-            <label htmlFor="city">Miasto</label>
+            <label htmlFor="city">City</label>
             <input type="text" onChange={(e) => setCity(e.target.value)} />
           </div>
           <div className="form-box">
-            <label htmlFor="postalCode">Kod pocztowy</label>
+            <label htmlFor="postalCode">Postal code</label>
             <input type="text" onChange={(e) => setPc(e.target.value)} />
           </div>
           <div className="form-box">
-            <label htmlFor="phoneNo">Numer telefonu</label>
+            <label htmlFor="phoneNo">Phone number</label>
             <input type="text" onChange={(e) => setMobile(e.target.value)} />
           </div>
         </div>
 
         <div className="form-two">
-          <h3>Termin odbioru:</h3>
+          <h3>Collection date:</h3>
           <div className="form-box">
-            <label htmlFor="date">Data</label>
+            <label htmlFor="date">Date</label>
             <input type="text" onChange={(e) => setDate(e.target.value)} />
           </div>
           <div className="form-box">
-            <label htmlFor="hour">Godzina</label>
+            <label htmlFor="hour">Hour</label>
             <input type="text" onChange={(e) => setHour(e.target.value)} />
           </div>
           <div className="form-box">
-            <label htmlFor="remarks">Uwagi dla kuriera</label>
+            <label htmlFor="remarks">Notes to courier</label>
             <textarea
               onChange={(e) => setMessage(e.target.value)}
               name="remarks"

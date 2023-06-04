@@ -9,66 +9,68 @@ function ProjectInfo(props) {
       <div className="key-takeaways">
         <div className="info-box">
           <h2>10</h2>
-          <h3>ODDANYCH WORKÓW</h3>
+          <h3>BAGS DONATED</h3>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste neque
-            culpa, sunt distinctio quia in rerum minima. Facere, ad possimus!
+            We collect donated items in 60 liter bags. Don't let the number of
+            bags alone confuse you - they hold a lot of things, and each of them
+            supports the organization's dependents!
           </p>
         </div>
 
         <div className="info-box">
           <h2>5</h2>
-          <h3>WSPARTYCH ORGANIZACJI</h3>
+          <h3>SUPPORTED ORGANISATIONS</h3>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste neque
-            culpa, sunt distinctio quia in rerum minima. Facere, ad possimus!
+            We support more than a dozen organizations, and their number is
+            growing all the time. If the organization you would like to help is
+            not on our list - add it to our database!
           </p>
         </div>
 
         <div className="info-box">
           <h2>7</h2>
-          <h3>ZORGANIZOWANYCH ZBIÓREK</h3>
+          <h3>ORGANISED FUNDARISERS</h3>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste neque
-            culpa, sunt distinctio quia in rerum minima. Facere, ad possimus!
+            Regardless of collecting donations from donors via courier, we also
+            organize periodic fundraisers - log in to learn more about them!
           </p>
         </div>
       </div>
 
       <div className="steps-header">
-        <h2>Wystarczą 4 proste kroki</h2>
+        <h2>All it takes is 4 simple steps</h2>
         <img src="public/Decoration.svg" alt="decoration-svg" />
       </div>
 
       <div className="steps-container">
         <div className="step-box">
           <div className="img-container one"></div>
-          <p className="p-heading-step">Wybierz rzeczy</p>
+          <p className="p-heading-step">Choose things</p>
           <div className="steps-line"></div>
-          <p className="p-p-step">ubrania, zabawki, sprzęt i inne</p>
+          <p className="p-p-step">clothes, toys, equipment and others</p>
         </div>
         <div className="step-box">
           <div className="img-container two"></div>
-          <p className="p-heading-step">Spakuj je</p>
+          <p className="p-heading-step">Pack them</p>
           <div className="steps-line"></div>
-          <p className="p-p-step">skorzystaj z worków na śmieci</p>
+          <p className="p-p-step">use bags for garbage</p>
         </div>
         <div className="step-box">
           <div className="img-container three"></div>
-          <p className="p-heading-step">Zdecyduj komu chcesz pomóc</p>
+          <p className="p-heading-step">Choose recipient</p>
           <div className="steps-line"></div>
-          <p className="p-p-step">wybierz zaufane miejsce</p>
+          <p className="p-p-step">choose a trusted place</p>
         </div>
         <div className="step-box">
           <div className="img-container four"></div>
-          <p className="p-heading-step">Zamów kuriera</p>
+          <p className="p-heading-step">Book a courier</p>
           <div className="steps-line"></div>
-          <p className="p-p-step">kurier przyjedzie w dogodnym terminie</p>
+          <p className="p-p-step">courier will arrive at a convenient time</p>
         </div>
       </div>
 
       <div className="steps-footer">
-        <button onClick={() => handleRedirection()}>ODDAJ RZECZY</button>
+        <button onClick={() => handleRedirection()}>DONATE</button>
       </div>
     </section>
   );

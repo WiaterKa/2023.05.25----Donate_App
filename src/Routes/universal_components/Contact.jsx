@@ -36,20 +36,20 @@ function Contact(props) {
     <section className="contact" id="contact">
       <div className="img-box"></div>
       <div className="txt-box">
-        <h2>Skontaktuj się z nami</h2>
+        <h2>Contact us</h2>
         <img src="Decoration.svg" alt="decoration-svg" />
         <p className="success-msg"> {successMsg}</p>
 
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className="upper-form">
             <div className="form-box">
-              <label htmlFor="name">Wpisz swoje imię</label>
+              <label htmlFor="name">Enter your name</label>
               <input
                 {...register("name", {
-                  required: "To pole jest wymagane",
+                  required: "This filed is required",
                   pattern: {
                     value: /^\w+$/,
-                    message: "Podane imię jest nieprawidłowe!",
+                    message: "The given name is incorrect!",
                   },
                 })}
                 className={errors.name ? "error-input" : ""}
@@ -58,13 +58,13 @@ function Contact(props) {
             </div>
 
             <div className="form-box">
-              <label htmlFor="email">Wpisz swój e-mail</label>
+              <label htmlFor="email">Enter your e-mail</label>
               <input
                 {...register("email", {
-                  required: "To pole jest wymagane",
+                  required: "This filed is required",
                   pattern: {
                     value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-                    message: "Podany e-mail jest nieprawidłowy!",
+                    message: "The given email is incorrect!",
                   },
                 })}
                 className={errors.email ? "error-input" : ""}
@@ -73,16 +73,16 @@ function Contact(props) {
             </div>
           </div>
           <div className="lower-form">
-            <label htmlFor="message">Wpisz swoją wiadomość</label>
+            <label htmlFor="message">Type your message</label>
             <textarea
               id="message"
               cols="30"
               rows="5"
               {...register("message", {
-                required: "To pole jest wymagane",
+                required: "This filed is required",
                 minLength: {
                   value: 120,
-                  message: "Wiadomość musi mieć co najmniej 120 znaków!",
+                  message: "The message must be at least 120 characters!",
                 },
               })}
               className={errors.message ? "error-input" : ""}

@@ -26,7 +26,7 @@ function Register() {
     <section className="login">
       <div className="wrapper">
         <div className="box-heading">
-          <h1>Załóz konto</h1>
+          <h1>Register</h1>
           <img src="Decoration.svg" alt="decoration-svg" />
         </div>
         <form
@@ -54,7 +54,7 @@ function Register() {
             />
             <p className="error-msg">{errors.email?.message}</p>
             <label className="password" htmlFor="password">
-              Hasło
+              Password
             </label>
             <input
               {...register("password", {
@@ -69,7 +69,7 @@ function Register() {
             />
             <p className="error-msg">{errors.password?.message}</p>
             <label className="password" htmlFor="passwordTwo">
-              Powtórz hasło
+              Repeat the password
             </label>
             <input
               {...register("passwordTwo", {
@@ -84,10 +84,10 @@ function Register() {
           </div>
           <div className="box-buttons">
             <button className="login">
-              <NavLink to="/login">Zaloguj się </NavLink>
+              <NavLink to="/login">Log in</NavLink>
             </button>
             <button className="register" type="submit">
-              Załóz konto
+              Register
             </button>
           </div>
         </form>

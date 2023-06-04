@@ -14,15 +14,16 @@ function Hero({ user, setUser }) {
         <div className="hero-img-container"></div>
         <div className="hero-txt-container">
           <h1 className="h1-hero">
-            Zacznij pomagać! <br />
-            Oddaj niechciane rzeczy w zaufane ręce <br />
+            Start helping people out! <br />
+            Place unwanted items in trusted hands!
+            <br />
             <img src="Decoration.svg" alt="decoration-svg" />
           </h1>
           <div className="btn-container">
             <button onClick={() => handleRedirection()} className="hero">
-              ODDAJ RZECZY
+              DONATE
             </button>
-            <button className="hero">ZORGANIZUJ ZBIÓRKĘ</button>
+            <button className="hero">FUNDARISERS</button>
           </div>
         </div>
       </div>

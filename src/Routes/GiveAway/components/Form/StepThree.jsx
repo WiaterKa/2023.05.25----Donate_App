@@ -11,7 +11,7 @@ function StepThree({
   return (
     <article className="step-three">
       <label className="location-lbl" htmlFor="location">
-        Lokalizacja
+        Location
       </label>
 
       <select
@@ -21,7 +21,7 @@ function StepThree({
           setLocation(e.target.value);
         }}
       >
-        <option value="0">-- wybierz --</option>
+        <option value="0">-- choose --</option>
         <option value="Warszawa">Warszawa</option>
         <option value="Kraków">Kraków</option>
         <option value="Katowice">Katowice</option>
@@ -34,42 +34,42 @@ function StepThree({
         <option value="Rzeszów">Rzeszów</option>
       </select>
 
-      <h3>Komu chcesz pomóc?</h3>
+      <h3>Who do you want to help?</h3>
       <div className="adressee">
         <p
           className={selectedOption === "dzieciom" ? "active" : ""}
           onClick={() => handleOptionClick("dzieciom")}
         >
-          dzieciom
+          kids
         </p>
         <p
           className={selectedOption === "samotnym mamom" ? "active" : ""}
           onClick={() => handleOptionClick("samotnym mamom")}
         >
-          samotnym mamom
+          single moms
         </p>
         <p
           className={selectedOption === "bezdomnym" ? "active" : ""}
           onClick={() => handleOptionClick("bezdomnym")}
         >
-          bezdomnym
+          homeless
         </p>
         <p
           className={selectedOption === "niepełnosprawnym" ? "active" : ""}
           onClick={() => handleOptionClick("niepełnosprawnym")}
         >
-          niepełnosprawnym
+          disabled people
         </p>
         <p
           className={selectedOption === "osobom starszym" ? "active" : ""}
           onClick={() => handleOptionClick("osobom starszym")}
         >
-          osobom starszym
+          eldery people
         </p>
       </div>
 
       <label className="organisation-lbl" htmlFor="organisation">
-        Wpisz nazwę odpowiedniej organizacji (opcjonalnie)
+        Enter the name of the desired organization (optional)
       </label>
       <input type="text" onChange={(e) => setOrganisation(e.target.value)} />
     </article>

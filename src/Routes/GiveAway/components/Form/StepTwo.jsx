@@ -3,9 +3,9 @@ import React from "react";
 function StepTwo({ setBags }) {
   return (
     <article className="step-two">
-      <h2>Podaj liczbę 60l worków, w które spakowałeś/aś rzeczy:</h2>
+      <h2>Enter the number of 60l bags in which you packed your items:</h2>
       <div className="select-box">
-        <label for="bags">Liczba 60L worków:</label>
+        <label for="bags">Number of 60L bags:</label>
 
         <select
           name="bags"
@@ -14,7 +14,7 @@ function StepTwo({ setBags }) {
             setBags(e.target.value);
           }}
         >
-          <option value="0">-- wybierz --</option>
+          <option value="0">-- choose --</option>
           <option value="1">1</option>
           <option value="2">2</option>
           <option value="3">3</option>
