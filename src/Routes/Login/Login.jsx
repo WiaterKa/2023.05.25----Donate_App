@@ -50,7 +50,6 @@ function Login() {
           onSubmit={(e) => {
             e.preventDefault();
             signIn({ email, password });
-            setUser(auth.currentUser.email);
             navigate("/");
           }}
         >

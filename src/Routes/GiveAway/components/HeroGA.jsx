@@ -1,10 +1,10 @@
 import React from "react";
-import Navbar from "../../universal_components/Navbar";
+import GANavbar from "./GANavbar";
 
-function HeroGA({ user, setUser }) {
+function HeroGA({}) {
   return (
     <section className="heroGA">
-      <Navbar user={user} setUser={setUser} />
+      <GANavbar />
 
       <div className="hero-main-container">
         <div className="heroGA-img-container"></div>

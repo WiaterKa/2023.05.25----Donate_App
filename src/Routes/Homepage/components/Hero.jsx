@@ -1,14 +1,14 @@
 import React from "react";
-import Navbar from "../../universal_components/Navbar";
 import { useNavigate } from "react-router-dom";
 import handleRedirection from "../../../helpers/handleRedirection";
+import HeroNavbar from "./HeroNavbar";
 
 function Hero({ user, setUser }) {
   const navigate = useNavigate();
 
   return (
     <section className="hero" id="hero">
-      <Navbar user={user} setUser={setUser} />
+      <HeroNavbar />
 
       <div className="hero-main-container">
         <div className="hero-img-container"></div>

@@ -83,10 +83,7 @@ function Register() {
             <p className="error-msg">{errors.passwordTwo?.message}</p>
           </div>
           <div className="box-buttons">
-            <button
-              className="login"
-              onClick={() => console.log(auth.currentUser.email)}
-            >
+            <button className="login">
               <NavLink to="/login">Zaloguj się </NavLink>
             </button>
             <button className="register" type="submit">

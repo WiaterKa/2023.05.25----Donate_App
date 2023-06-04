@@ -1,12 +1,11 @@
 import React from "react";
-import { Link } from "react-scroll";
 import { NavLink } from "react-router-dom";
 import { auth } from "../../config/firebase";
 import { signOut } from "firebase/auth";
 
 function Navbar() {
   return (
-    <nav>
+    <>
       {localStorage.user === undefined ? (
         <div className="nav-login">
           <button
@@ -47,25 +46,7 @@ function Navbar() {
           </button>
         </div>
       )}
-
-      <div className="nav-homepage">
-        <Link to="hero" smooth={true} duration={1000}>
-          Start
-        </Link>
-        <Link to="project-info" smooth={true} duration={12000}>
-          O co chodzi?
-        </Link>
-        <Link to="about_us" smooth={true} duration={1000}>
-          O nas
-        </Link>
-        <Link to="organisations" smooth={true} duration={1000}>
-          Fundacja i organizacje
-        </Link>
-        <Link to="contact" smooth={true} duration={1000}>
-          Kontakt
-        </Link>
-      </div>
-    </nav>
+    </>
   );
 }
 
