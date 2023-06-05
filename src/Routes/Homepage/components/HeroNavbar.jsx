@@ -17,7 +17,7 @@ function HeroNavbar() {
         <Link to="hero" smooth={true} duration={1000}>
           Start
         </Link>
-        <Link to="project-info" smooth={true} duration={12000}>
+        <Link to="project-info" smooth={true} duration={1000}>
           About the project
         </Link>
         <Link to="about_us" smooth={true} duration={1000}>

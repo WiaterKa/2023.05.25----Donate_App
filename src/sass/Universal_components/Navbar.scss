@@ -6,6 +6,11 @@ nav {
   position: absolute;
   right: 7.5%;
 
+  @media only screen and (max-width: 660px) {
+    right: 0;
+    padding-right: 5rem;
+  }
+
   .nav-login {
     display: flex;
     align-items: center;
@@ -70,11 +75,11 @@ nav {
 
     @media screen and (max-width: 660px) {
       position: absolute;
-      right: -7.5%;
       top: 0;
       height: 60vh;
       width: 100vw;
-      padding-right: -20%;
+      right: -25%;
+      width: 110vw !important;
       background: rgba(255, 255, 255, 0.04);
       backdrop-filter: blur(40.7742px);
       justify-content: flex-start;

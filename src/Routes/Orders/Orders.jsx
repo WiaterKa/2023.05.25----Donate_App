@@ -43,18 +43,31 @@ function Orders() {
         <div className="txt-container">
           <h1>Hello {localStorage.user}</h1>
           <img src="/Decoration.svg" alt="decoration-svg" />
-          <h2>
-            Congratulations! You have already made {orderData.length} donations.
-            <br />
-            Please see the details below.
-          </h2>
+
+          {orderData.length !== 0 ? (
+            <h2>
+              Congratulations! You have already made {orderData.length}{" "}
+              donations.
+              <br />
+              Please see the details below.
+            </h2>
+          ) : (
+            <>
+              <h2>Ups... It seems you haven't made any donation yet.</h2>
+              <button
+                className="donate-btn"
+                onClick={() => navigate("/giveaway")}
+              >
+                Donate!
+              </button>
+            </>
+          )}
 
           <div className="table-orders">
             {orderData != [] &&
               orderData.map((element) => {
                 return <OrderTab element={element} />;
               })}
-
           </div>
         </div>
       </div>

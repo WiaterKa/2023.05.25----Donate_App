@@ -22,7 +22,8 @@ function StepFive({
       <div className="box-summary">
         <img src="/Icon-1.svg" alt="summary-one-svg" />
         <h4>
-          {bags} bags, {options.join(", ")}, {selectedOption}
+          {bags} bags, {options.length > 1 ? options.join(", ") : options},
+          {selectedOption}
         </h4>
       </div>
       <div className="box-summary">

@@ -21,18 +21,48 @@
     top: 0;
   }
 
+  [alt="decoration-svg"] {
+    padding-bottom: 1rem;
+  }
+
   .nav-orders {
     position: absolute;
     right: 7.5%;
     top: 0;
   }
 
+  .donate-btn {
+    font: normal normal 300 2.4rem "Open Sans";
+    color: #000000;
+    padding: 2.3rem 5.3rem;
+    border: 0.75px solid #3c3c3c;
+    background-color: transparent;
+    cursor: pointer;
+    max-width: 19rem;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+
+    &:hover {
+      box-shadow: 14px 8px 14px 12px rgba(199, 199, 199, 0.87);
+    }
+  }
+
   .orders-container {
     width: 70%;
+
+    @media only screen and (max-width: 1000px) {
+      width: 100%;
+    }
   }
 
   .txt-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
+    justify-content: center;
+
     h1 {
       font: normal normal normal 4.5rem "Raleway";
       letter-spacing: -0.76px;
@@ -52,12 +82,25 @@
 
       @media only screen and (max-width: 960px) {
         font-size: 2.8rem;
+        padding-inline: 2rem;
+      }
+    }
+
+    .table-h2 {
+      font: normal normal 600 3rem "Open Sans";
+      color: white;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+
+      @media only screen and (max-width: 500px) {
+        font-size: 2rem;
       }
     }
 
     .table-orders {
       display: flex;
       flex-direction: column;
+      width: 80%;
 
       .order {
         //   width: 80%;
@@ -72,6 +115,12 @@
         justify-content: space-between;
         padding: 1.5rem 3rem;
 
+        @media only screen and (max-width: 760px) {
+          flex-direction: column;
+          gap: 1.5rem;
+          align-items: center;
+        }
+
         .summary-txt {
           display: flex;
           align-items: center;
@@ -79,11 +128,19 @@
 
           h3 {
             font: normal normal 600 1.7rem "Open Sans";
+
+            @media only screen and (max-width: 500px) {
+              font-size: 1.5rem;
+            }
           }
 
           p {
             font: normal normal 600 2rem "Open Sans";
             color: #737373;
+
+            @media only screen and (max-width: 500px) {
+              font-size: 1.7rem;
+            }
           }
         }
 
@@ -124,6 +181,10 @@
         .p-table-heading {
           font: normal normal 600 1.7rem "Open Sans";
           min-height: 2.5rem;
+
+          @media only screen and (max-width: 500px) {
+            font-size: 1.5rem;
+          }
         }
 
         .p-table {
