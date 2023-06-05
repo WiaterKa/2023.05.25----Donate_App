@@ -1,8 +1,15 @@
 import React from "react";
-import handleRedirection from "../../../helpers/handleRedirection";
 import { useNavigate } from "react-router-dom";
 
 function ProjectInfo(props) {
+  function handleRedirection() {
+    if (localStorage.user) {
+      navigate("/giveaway");
+    } else {
+      window.alert("Aby oddać rzeczy załóz konto lub zaloguj się!");
+    }
+  }
+
   const navigate = useNavigate();
   return (
     <section className="project-info" id="project-info">

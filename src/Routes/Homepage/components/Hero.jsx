@@ -1,10 +1,18 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import handleRedirection from "../../../helpers/handleRedirection";
+
 import HeroNavbar from "./HeroNavbar";
 
-function Hero({ user, setUser }) {
+function Hero() {
   const navigate = useNavigate();
+
+  function handleRedirection() {
+    if (localStorage.user) {
+      navigate("/giveaway");
+    } else {
+      window.alert("Aby oddać rzeczy załóz konto lub zaloguj się!");
+    }
+  }
 
   return (
     <section className="hero" id="hero">
