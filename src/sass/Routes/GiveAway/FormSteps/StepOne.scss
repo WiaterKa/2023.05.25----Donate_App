@@ -4,6 +4,10 @@
     color: #000000;
     padding-top: 7rem;
     padding-bottom: 4rem;
+
+    @media only screen and (max-width: 700px) {
+      font-size: 3rem;
+    }
   }
 
   .options-container {
@@ -22,6 +26,10 @@
         height: 4rem;
         width: 4rem;
         cursor: pointer;
+        @media only screen and (max-width: 700px) {
+          height: 3.5rem;
+          width: 3.5rem;
+        }
       }
 
       .active {
@@ -31,6 +39,10 @@
       .option {
         font: normal normal 300 2.4rem "Open Sans";
         color: #000000;
+
+        @media only screen and (max-width: 700px) {
+          font-size: 2rem;
+        }
       }
     }
   }

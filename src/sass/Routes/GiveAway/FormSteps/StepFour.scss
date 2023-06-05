@@ -1,14 +1,26 @@
 .step-four {
   color: #000000;
 
+  // @media only screen and (max-width: 700px) {
+  //   height: 71rem !important;
+  // }
+
   h2 {
     font: normal normal 600 3.6rem "Open Sans";
     padding-top: 7rem;
+
+    @media only screen and (max-width: 700px) {
+      font-size: 3rem;
+    }
   }
 
   .form-container {
     display: flex;
     gap: 5rem;
+
+    @media only screen and (max-width: 700px) {
+      gap: 2rem;
+    }
 
     .form-one,
     .form-two {
@@ -20,6 +32,11 @@
       h3 {
         font: normal normal 600 2.4rem "Open Sans";
         margin-bottom: 2rem;
+
+        @media only screen and (max-width: 700px) {
+          font-size: 2rem;
+          height: 5.5rem;
+        }
       }
 
       .form-box {
@@ -30,6 +47,10 @@
         label {
           font: normal normal 300 2rem "Open Sans";
           width: 35%;
+
+          @media only screen and (max-width: 700px) {
+            font-size: 1.5rem;
+          }
         }
 
         input {
@@ -40,6 +61,11 @@
           cursor: pointer;
           font: normal normal 300 1.3rem "Open Sans";
           padding-left: 0.6rem;
+
+          @media only screen and (max-width: 700px) {
+            font-size: 1rem;
+            height: 3rem;
+          }
         }
 
         #textarea {

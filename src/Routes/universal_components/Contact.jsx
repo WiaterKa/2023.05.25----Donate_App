@@ -89,7 +89,7 @@ function Contact(props) {
             ></textarea>
             <p className="error-msg">{errors.message?.message}</p>
           </div>
-          <input className="submit-btn" type="submit" />
+          <input className="submit-btn" type="submit" value="Send" />
         </form>
         <div className="social-box">
           <a href="/">

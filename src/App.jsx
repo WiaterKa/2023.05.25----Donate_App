@@ -16,10 +16,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Homepage user={user} setUser={setUser} />} />
         <Route
-          path="/giveaway/*"
+          path="/giveaway"
           element={<GiveAway user={user} setUser={setUser} />}
         />
-
         <Route
           path="/login"
           element={<Login user={user} setUser={setUser} />}
