@@ -44,7 +44,7 @@ function Login() {
       <div className="wrapper">
         <div className="box-heading">
           <h1>Log in</h1>
-          <img src="Decoration.svg" alt="decoration-svg" />
+          <img src="/Decoration.svg" alt="decoration-svg" />
         </div>
         <form
           onSubmit={(e) => {

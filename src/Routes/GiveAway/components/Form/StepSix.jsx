@@ -7,7 +7,7 @@ function StepSix(props) {
         Thank you for submitting the form. We will send any information about
         the collection of donated items by email.
       </h2>
-      <img src="Decoration.svg" alt="decoration-svg" />
+      <img src="/Decoration.svg" alt="decoration-svg" />
     </article>
   );
 }

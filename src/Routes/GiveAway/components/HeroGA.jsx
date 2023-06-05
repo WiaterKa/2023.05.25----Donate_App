@@ -13,7 +13,7 @@ function HeroGA({}) {
             Donate things you no longer want <br />
             TO THOSE IN NEED
             <br />
-            <img src="Decoration.svg" alt="decoration-svg" />
+            <img src="/Decoration.svg" alt="decoration-svg" />
           </h1>
           <h2 className="h2_heroGA">All it takes is 4 simple steps</h2>
           <div className="steps-container">

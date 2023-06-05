@@ -1,7 +1,7 @@
 .heroGA {
   .hero-main-container {
     display: flex;
-    height: 90rem; //do zmiany -> zwłaszcza w zakresie mediaqueries
+    height: 90rem; 
     padding-right: 7.5%;
 
     @media only screen and (max-width: 660px) {
@@ -11,7 +11,7 @@
 
     .heroGA-img-container {
       width: 50%;
-      background-image: url("Form-Hero-Image.jpg");
+      background-image: url("/Form-Hero-Image.jpg");
       background-size: cover;
       background-repeat: no-repeat;
       background-position: right;

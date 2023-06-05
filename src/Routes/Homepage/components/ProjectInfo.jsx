@@ -39,7 +39,7 @@ function ProjectInfo(props) {
 
       <div className="steps-header">
         <h2>All it takes is 4 simple steps</h2>
-        <img src="public/Decoration.svg" alt="decoration-svg" />
+        <img src="/Decoration.svg" alt="decoration-svg" />
       </div>
 
       <div className="steps-container">

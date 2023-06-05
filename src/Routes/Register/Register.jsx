@@ -27,7 +27,7 @@ function Register() {
       <div className="wrapper">
         <div className="box-heading">
           <h1>Register</h1>
-          <img src="Decoration.svg" alt="decoration-svg" />
+          <img src="/Decoration.svg" alt="decoration-svg" />
         </div>
         <form
           onSubmit={handleSubmit(async () => {

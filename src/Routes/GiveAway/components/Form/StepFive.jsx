@@ -20,13 +20,13 @@ function StepFive({
 
       <h3>You donate:</h3>
       <div className="box-summary">
-        <img src="Icon-1.svg" alt="summary-one-svg" />
+        <img src="/Icon-1.svg" alt="summary-one-svg" />
         <h4>
           {bags} bags, {options.join(", ")}, {selectedOption}
         </h4>
       </div>
       <div className="box-summary">
-        <img src="Icon-2.svg" alt="summary-two-svg" />
+        <img src="/Icon-2.svg" alt="summary-two-svg" />
         <h4>Location: {location}</h4>
       </div>
 
