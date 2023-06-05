@@ -86,8 +86,8 @@ export const ngos = {
 export const fundarising = {
   data: [
     {
-      name: `Democracy Ahead' fundarising`,
-      description: `Disseminating the basics of direct democracy`,
+      name: `Help Eldery People' fundarising`,
+      description: `helping poor eldery people`,
       needs: `clothes, food, household appliances, furniture, toys`,
     },
     {

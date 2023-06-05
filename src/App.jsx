@@ -7,6 +7,7 @@ import GiveAway from "./Routes/GiveAway/GiveAway";
 import Error from "./Routes/Error/Error";
 import Logout from "./Routes/Logout/Logout";
 import Orders from "./Routes/Orders/Orders";
+import Fundarisers from "./Routes/Fundarisers/Fundarisers";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/" element={<Homepage />} />
         <Route path="/giveaway" element={<GiveAway />} />
         <Route path="/orders" element={<Orders />} />
+        <Route path="/fundarisers" element={<Fundarisers />} />
         <Route path="/login" element={<Login />} />
         <Route path="/logout" element={<Logout />} />
         <Route path="/register" element={<Register />} />
