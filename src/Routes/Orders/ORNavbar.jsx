@@ -1,22 +1,20 @@
 import React from "react";
+import { useState } from "react";
+import Navbar from "../universal_components/Navbar";
 import { NavLink } from "react-router-dom";
 
-import Navbar from "../../universal_components/Navbar";
-import { useState } from "react";
-
-function GANavbar() {
+function ORNavbar(props) {
   const [isActiveBurg, setsActiveBurg] = useState("");
 
   const handleToggle = () => {
     setsActiveBurg(!isActiveBurg);
   };
-
   return (
-    <nav>
+    <nav className="nav-orders">
       <Navbar />
       <div className={`nav-homepage ${isActiveBurg ? "active" : ""}`}>
         <NavLink to="/">Home Page</NavLink>
-        <NavLink to="/orders">Your donations</NavLink>
+        <NavLink to="/giveaway">Donate</NavLink>
         <NavLink to="/addorganisation">Add organisation</NavLink>
         <NavLink to="/addorganisation">Fundarisers</NavLink>
       </div>
@@ -32,4 +30,4 @@ function GANavbar() {
   );
 }
 
-export default GANavbar;
+export default ORNavbar;

@@ -11,7 +11,6 @@ html {
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
-// @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap");
 
 @import "./Routes/Homepage/Homepage";
 @import "./Routes/Homepage/Hero";
@@ -31,3 +30,4 @@ html {
 @import "./Routes/GiveAway/FormSteps/StepFour.scss";
 @import "./Routes/GiveAway/FormSteps/StepFive.scss";
 @import "./Routes/GiveAway/FormSteps/StepSix.scss";
+@import "./Routes/Orders/Orders.scss";

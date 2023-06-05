@@ -32,6 +32,7 @@ function FormGA(props) {
   const onSubmitOrder = async () => {
     const orderCollection = collection(db, "Orders");
     await addDoc(orderCollection, {
+      dateOrder: new Date(),
       user: localStorage.user,
       bags: bags,
       city: city,

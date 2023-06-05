@@ -25,7 +25,7 @@ function Hero() {
             Start helping people out! <br />
             Place unwanted items in trusted hands!
             <br />
-            <img src="Decoration.svg" alt="decoration-svg" />
+            <img src="/Decoration.svg" alt="decoration-svg" />
           </h1>
           <div className="btn-container">
             <button onClick={() => handleRedirection()} className="hero">
