@@ -5,7 +5,7 @@
     padding-inline: 4.5%;
     padding-top: 4.6rem;
     padding-bottom: 8.4rem;
-    background: transparent url("3 Columns Background.png") 0% 0% no-repeat
+    background: transparent url("/3 Columns Background.png") 0% 0% no-repeat
       padding-box;
 
     @media only screen and (max-width: 1300px) {
@@ -116,16 +116,16 @@
       }
 
       .one {
-        background-image: url("Icon-1.svg");
+        background-image: url("/Icon-1.svg");
       }
       .two {
-        background-image: url("Icon-2.svg");
+        background-image: url("/Icon-2.svg");
       }
       .three {
-        background-image: url("Icon-3.svg");
+        background-image: url("/Icon-3.svg");
       }
       .four {
-        background-image: url("Icon-4.svg");
+        background-image: url("/Icon-4.svg");
       }
 
       .p-heading-step {
