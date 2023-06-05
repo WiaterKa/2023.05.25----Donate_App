@@ -14,7 +14,7 @@
     }
 
     @media only screen and (max-width: 550px) {
-      height: 50rem;
+      height: auto;
       background-size: cover;
       gap: 1rem;
       padding-inline: 2.5%;
@@ -83,6 +83,7 @@
       @media only screen and (max-width: 960px) {
         font-size: 3rem;
         text-align: center;
+        padding-inline: 2rem;;
       }
     }
   }

@@ -1,6 +1,10 @@
 .step-five {
   color: #000000;
 
+  @media only screen and (max-width: 400px) {
+    height: 80rem !important;
+  }
+
   h2 {
     font: normal normal 600 3.6rem "Open Sans";
 
@@ -47,6 +51,9 @@
 
   .tables-container {
     display: flex;
+    @media only screen and (max-width: 400px) {
+      flex-direction: column;
+    }
 
     .table {
       width: 50%;
