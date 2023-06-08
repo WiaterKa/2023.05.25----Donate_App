@@ -15,7 +15,6 @@ function FNavbar(props) {
       <div className={`nav-homepage ${isActiveBurg ? "active" : ""}`}>
         <NavLink to="/">Home Page</NavLink>
         <NavLink to="/giveaway">Donate</NavLink>
-        <NavLink to="/addorganisation">Add organisation</NavLink>
         <NavLink to="/orders">Your donations</NavLink>
       </div>
       <button

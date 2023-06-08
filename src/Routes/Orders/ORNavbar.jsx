@@ -15,8 +15,7 @@ function ORNavbar(props) {
       <div className={`nav-homepage ${isActiveBurg ? "active" : ""}`}>
         <NavLink to="/">Home Page</NavLink>
         <NavLink to="/giveaway">Donate</NavLink>
-        <NavLink to="/addorganisation">Add organisation</NavLink>
-        <NavLink to="/addorganisation">Fundarisers</NavLink>
+        <NavLink to="/fundarisers">Fundarisers</NavLink>
       </div>
       <button
         className={`burger ${isActiveBurg ? "active" : ""}`}

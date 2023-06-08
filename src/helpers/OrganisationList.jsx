@@ -86,7 +86,7 @@ export const ngos = {
 export const fundarising = {
   data: [
     {
-      name: `Help Eldery People' fundarising`,
+      name: `Help Eldery People fundarising`,
       description: `helping poor eldery people`,
       needs: `clothes, food, household appliances, furniture, toys`,
     },
