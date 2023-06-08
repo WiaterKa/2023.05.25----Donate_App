@@ -6,9 +6,11 @@ import FNavbar from "./FNavbar";
 import { getDocs, collection } from "firebase/firestore";
 import { db } from "../../config/firebase";
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 function Fundarisers(props) {
   const [fundarisers, setFundarisers] = useState([]);
+  const navigate = useNavigate();
 
   const settings = {
     dots: true,
@@ -33,6 +35,7 @@ function Fundarisers(props) {
   useEffect(() => {
     if (localStorage.user) {
       getData();
+      console.log(fundarisers);
     } else {
       navigate("/error");
     }
@@ -40,16 +43,25 @@ function Fundarisers(props) {
 
   return (
     <section className="fundarisers">
+      <div className="img-container"></div>
       <FNavbar />
-      <Slider {...settings} className="slider">
-        {fundarisers.map((element) => {
-          return (
-            <div className="slid">
-              <h1>{element.name}</h1>
-            </div>
-          );
-        })}
-      </Slider>
+      {fundarisers.length > 0 && (
+        <Slider {...settings} className="slider">
+          {fundarisers.map((element) => {
+            return (
+              <div className="slide">
+                <h1>{element.name}</h1>
+                <div className="details">
+                  <h2>{element.date}</h2>
+                  <h2>{element.place}</h2>
+                </div>
+                <h3>What should you bring?</h3>
+                <p>{element.needs}</p>
+              </div>
+            );
+          })}
+        </Slider>
+      )}
     </section>
   );
 }

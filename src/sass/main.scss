@@ -12,7 +12,7 @@ html {
 
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 
-@import "./Routes/Homepage/Homepage";
+
 @import "./Routes/Homepage/Hero";
 @import "./Routes/Homepage/Projectinfo";
 @import "./Routes/Homepage/AboutUs";
@@ -31,3 +31,4 @@ html {
 @import "./Routes/GiveAway/FormSteps/StepFive.scss";
 @import "./Routes/GiveAway/FormSteps/StepSix.scss";
 @import "./Routes/Orders/Orders.scss";
+@import "./Routes/Fundarisers/Fundarisers.scss";

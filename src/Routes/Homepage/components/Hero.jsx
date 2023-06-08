@@ -10,7 +10,7 @@ function Hero() {
     if (localStorage.user) {
       navigate("/giveaway");
     } else {
-      window.alert("Aby oddać rzeczy załóz konto lub zaloguj się!");
+      window.alert("In order to donate sign up first!");
     }
   }
 
@@ -31,7 +31,20 @@ function Hero() {
             <button onClick={() => handleRedirection()} className="hero">
               DONATE
             </button>
-            <button className="hero">FUNDARISERS</button>
+            <button
+              onClick={() => {
+                if (localStorage.user) {
+                  navigate("/fundarisers");
+                } else {
+                  window.alert(
+                    "In order to see the fundarisings sign up first!"
+                  );
+                }
+              }}
+              className="hero"
+            >
+              FUNDARISERS
+            </button>
           </div>
         </div>
       </div>
