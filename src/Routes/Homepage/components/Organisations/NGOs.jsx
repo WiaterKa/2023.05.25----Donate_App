@@ -1,9 +1,18 @@
 import React from "react";
 import { ngos } from "../../../../helpers/OrganisationList";
-import { useState } from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { set } from "../../../../app/features/counter/counterSlice";
+import { useEffect } from "react";
 
 function NGOs(props) {
-  const [currentPage, setCurrentPage] = useState(0);
+  const dispatch = useDispatch();
+  const count = useSelector((state) => state.counter.value);
+  let number = 0;
+
+  useEffect(() => {
+    dispatch(set(0));
+    console.log(count);
+  }, []);
 
   const pages = [];
   let x = 0;
@@ -16,34 +25,38 @@ function NGOs(props) {
 
   return (
     <>
-      <div className="organisations-box">
-        {pages[currentPage].map((element) => (
-          <div className="organisation-container" key={element.name}>
-            <div className="details">
-              <h3>{element.name}</h3>
-              <p>{element.description}</p>
-            </div>
-            <p className="needs">{element.needs}</p>
+      {count <= pages.length - 1 && (
+        <>
+          {" "}
+          <div className="organisations-box">
+            {pages[count].map((element) => (
+              <div className="organisation-container" key={element.name}>
+                <div className="details">
+                  <h3>{element.name}</h3>
+                  <p>{element.description}</p>
+                </div>
+                <p className="needs">{element.needs}</p>
+              </div>
+            ))}
           </div>
-        ))}
-      </div>
-
-      <div>
-        <div className="pages-box">
-          {pages.map((page, index) => {
-            let number = index;
-            return (
-              <p
-                className={currentPage === index ? "activePage" : ""}
-                key={index}
-                onClick={() => setCurrentPage(index)}
-              >
-                {number + 1}
-              </p>
-            );
-          })}
-        </div>
-      </div>
+          <div>
+            <div className="pages-box">
+              {pages.map((page, index) => {
+                number++;
+                return (
+                  <p
+                    className={count === index ? "activePage" : ""}
+                    key={index}
+                    onClick={() => dispatch(set(index))}
+                  >
+                    {number}
+                  </p>
+                );
+              })}
+            </div>
+          </div>
+        </>
+      )}
     </>
   );
 }
