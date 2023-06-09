@@ -1,12 +1,14 @@
-function StepThree({
+import { useDispatch, useSelector } from "react-redux";
+import {
+  setAdressee,
   setLocation,
-  selectedOption,
-  setSelectedOption,
   setOrganisation,
-}) {
-  const handleOptionClick = (option) => {
-    setSelectedOption(option);
-  };
+} from "../../../../app/features/form/formSlice";
+
+function StepThree({}) {
+  const dispatch = useDispatch();
+  const adressee = useSelector((state) => state.form.adressee);
+  const location = useSelector((state) => state.form.location);
 
   return (
     <article className="step-three">
@@ -17,8 +19,9 @@ function StepThree({
       <select
         name="location"
         id="location"
+        value={location}
         onChange={(e) => {
-          setLocation(e.target.value);
+          dispatch(setLocation(e.target.value));
         }}
       >
         <option value="0">-- choose --</option>
@@ -37,32 +40,32 @@ function StepThree({
       <h3>Who do you want to help?</h3>
       <div className="adressee">
         <p
-          className={selectedOption === "dzieciom" ? "active" : ""}
-          onClick={() => handleOptionClick("dzieciom")}
+          className={adressee === "kids" ? "active" : ""}
+          onClick={() => dispatch(setAdressee("kids"))}
         >
           kids
         </p>
         <p
-          className={selectedOption === "samotnym mamom" ? "active" : ""}
-          onClick={() => handleOptionClick("samotnym mamom")}
+          className={adressee === "lonely moms" ? "active" : ""}
+          onClick={() => dispatch(setAdressee("lonely moms"))}
         >
           single moms
         </p>
         <p
-          className={selectedOption === "bezdomnym" ? "active" : ""}
-          onClick={() => handleOptionClick("bezdomnym")}
+          className={adressee === "homeless" ? "active" : ""}
+          onClick={() => dispatch(setAdressee("homeless"))}
         >
           homeless
         </p>
         <p
-          className={selectedOption === "niepełnosprawnym" ? "active" : ""}
-          onClick={() => handleOptionClick("niepełnosprawnym")}
+          className={adressee === "disabled" ? "active" : ""}
+          onClick={() => dispatch(setAdressee("disabled"))}
         >
           disabled people
         </p>
         <p
-          className={selectedOption === "osobom starszym" ? "active" : ""}
-          onClick={() => handleOptionClick("osobom starszym")}
+          className={adressee === "eldery people" ? "active" : ""}
+          onClick={() => dispatch(setAdressee("eldery people"))}
         >
           eldery people
         </p>
@@ -71,7 +74,10 @@ function StepThree({
       <label className="organisation-lbl" htmlFor="organisation">
         Enter the name of the desired organization (optional)
       </label>
-      <input type="text" onChange={(e) => setOrganisation(e.target.value)} />
+      <input
+        type="text"
+        onChange={(e) => dispatch(setOrganisation(e.target.value))}
+      />
     </article>
   );
 }

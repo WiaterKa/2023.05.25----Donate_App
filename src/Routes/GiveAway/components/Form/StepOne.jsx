@@ -4,24 +4,22 @@ import { setOption } from "../../../../app/features/form/formSlice";
 
 function StepOne() {
   const dispatch = useDispatch();
-  const prevOptions = useSelector((state) => state.form.options);
+  const options = useSelector((state) => state.form.options);
 
   function handleChoice(e) {
     // e.currentTarget.classList.toggle("active");
     const selectedOption = e.target.nextSibling.innerText;
 
-    if (prevOptions.includes(selectedOption)) {
-      const updatedOptions = prevOptions.filter(
+    if (options.includes(selectedOption)) {
+      const updatedOptions = options.filter(
         (item) => item !== selectedOption
       );
       dispatch(setOption(updatedOptions));
-      console.log("buka");
     } else {
-      const updatedOptions = [...prevOptions, selectedOption];
+      const updatedOptions = [...options, selectedOption];
       dispatch(setOption(updatedOptions));
-      console.log("ipdate");
     }
-    console.log(prevOptions);
+
   }
 
   return (
@@ -32,7 +30,7 @@ function StepOne() {
         <div className="option-box">
           <div
             className={
-              prevOptions.includes("clothes that are reusable") ? "active" : ""
+              options.includes("clothes that are reusable") ? "active" : ""
             }
             onClick={(e) => {
               handleChoice(e);
@@ -43,7 +41,7 @@ function StepOne() {
         </div>
         <div className="option-box">
           <div
-            className={prevOptions.includes("discard clothes") ? "active" : ""}
+            className={options.includes("discard clothes") ? "active" : ""}
             data-color="checkbox"
             onClick={(e) => {
               handleChoice(e);
@@ -53,7 +51,7 @@ function StepOne() {
         </div>
         <div className="option-box">
           <div
-            className={prevOptions.includes("books") ? "active" : ""}
+            className={options.includes("books") ? "active" : ""}
             data-color="checkbox"
             onClick={(e) => {
               handleChoice(e);
@@ -63,7 +61,7 @@ function StepOne() {
         </div>
         <div className="option-box">
           <div
-            className={prevOptions.includes("other") ? "active" : ""}
+            className={options.includes("other") ? "active" : ""}
             onClick={(e) => {
               handleChoice(e);
             }}

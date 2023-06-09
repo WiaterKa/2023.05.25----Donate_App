@@ -1,21 +1,18 @@
 import React from "react";
 import { useSelector } from "react-redux";
 
-function StepFive({
-  options,
-  bags,
-  location,
-  selectedOption,
-  organisation,
-  street,
-  city,
-  pc,
-  mobile,
-  date,
-  hour,
-  message,
-}) {
-  const prevOptions = useSelector((state) => state.form.options);
+function StepFive() {
+  const options = useSelector((state) => state.form.options);
+  const bags = useSelector((state) => state.form.bags);
+  const location = useSelector((state) => state.form.location);
+  const adressee = useSelector((state) => state.form.adressee);
+  const street = useSelector((state) => state.form.street);
+  const city = useSelector((state) => state.form.city);
+  const pc = useSelector((state) => state.form.pc);
+  const mobile = useSelector((state) => state.form.mobile);
+  const date = useSelector((state) => state.form.date);
+  const hour = useSelector((state) => state.form.hour);
+  const message = useSelector((state) => state.form.message);
 
   return (
     <article className="step-five">
@@ -25,9 +22,8 @@ function StepFive({
       <div className="box-summary">
         <img src="/Icon-1.svg" alt="summary-one-svg" />
         <h4>
-          {bags} bags,{" "}
-          {prevOptions.length > 1 ? prevOptions.join(", ") : prevOptions},
-          {selectedOption}
+          {bags} bags, {options.length > 1 ? options.join(", ") : options},
+          {adressee}
         </h4>
       </div>
       <div className="box-summary">

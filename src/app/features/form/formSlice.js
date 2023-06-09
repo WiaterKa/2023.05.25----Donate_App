@@ -2,47 +2,17 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   options: [],
-  finishedAt: null,
-  activeQuestion: 0,
-  result: 0,
-  questions: [
-    {
-      id: 1,
-      content: "Redux służy do...",
-      answers: [
-        {
-          valid: false,
-          checked: false,
-          content: "Zarządzania logiką biznesową w React",
-        },
-        {
-          valid: false,
-          checked: false,
-          content: "Wykonywania operacji asynchronicznych",
-        },
-        { valid: true, checked: false, content: "Zarządzania stanem" },
-        {
-          valid: false,
-          checked: false,
-          content: "Automatyzacji testowania komponentów",
-        },
-      ],
-    },
-    {
-      id: 2,
-      content: "Redux Toolkit to...",
-      answers: [
-        { valid: false, checked: false, content: "Middleware do obsługi API" },
-        {
-          valid: true,
-          checked: false,
-          content: "Projekt ułatwiający pracę z Redux",
-        },
-        { valid: false, checked: false, content: "Plugin do Chrome" },
-        { valid: false, checked: false, content: "Plik konfiguracyjny Redux" },
-      ],
-    },
-  ],
+  bags: 0,
+  adressee: "",
+  location: "",
+  organisation: "",
+  street: "",
+  city: "",
+  pc: "",
+  mobile: "",
+  date: "",
+  hour: "",
+  message: "",
 };
 
 export const formSlice = createSlice({
@@ -52,9 +22,55 @@ export const formSlice = createSlice({
     setOption: (state, action) => {
       state.options = action.payload;
     },
+    setBags: (state, action) => {
+      state.bags = action.payload;
+    },
+    setLocation: (state, action) => {
+      state.location = action.payload;
+    },
+    setAdressee: (state, action) => {
+      state.adressee = action.payload;
+    },
+    setOrganisation: (state, action) => {
+      state.adressee = action.payload;
+    },
+    setCity: (state, action) => {
+      state.city = action.payload;
+    },
+    setStreet: (state, action) => {
+      state.street = action.payload;
+    },
+    setPc: (state, action) => {
+      state.pc = action.payload;
+    },
+    setMobile: (state, action) => {
+      state.mobile = action.payload;
+    },
+    setDate: (state, action) => {
+      state.date = action.payload;
+    },
+    setHour: (state, action) => {
+      state.hour = action.payload;
+    },
+    setMessage: (state, action) => {
+      state.message = action.payload;
+    },
   },
 });
 
-export const { setOption } = formSlice.actions;
+export const {
+  setOption,
+  setBags,
+  setLocation,
+  setAdressee,
+  setOrganisation,
+  setCity,
+  setStreet,
+  setPc,
+  setMobile,
+  setDate,
+  setHour,
+  setMessage,
+} = formSlice.actions;
 
 export default formSlice.reducer;
