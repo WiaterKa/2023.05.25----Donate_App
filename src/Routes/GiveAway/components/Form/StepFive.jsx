@@ -1,4 +1,5 @@
 import React from "react";
+import { useSelector } from "react-redux";
 
 function StepFive({
   options,
@@ -14,6 +15,8 @@ function StepFive({
   hour,
   message,
 }) {
+  const prevOptions = useSelector((state) => state.form.options);
+
   return (
     <article className="step-five">
       <h2>Summary of your donation</h2>
@@ -22,7 +25,8 @@ function StepFive({
       <div className="box-summary">
         <img src="/Icon-1.svg" alt="summary-one-svg" />
         <h4>
-          {bags} bags, {options.length > 1 ? options.join(", ") : options},
+          {bags} bags,{" "}
+          {prevOptions.length > 1 ? prevOptions.join(", ") : prevOptions},
           {selectedOption}
         </h4>
       </div>
