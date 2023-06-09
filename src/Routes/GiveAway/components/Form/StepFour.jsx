@@ -13,10 +13,6 @@ import {
 function StepFour({}) {
   const dispatch = useDispatch();
 
-  const options = useSelector((state) => state.form.options);
-  const bags = useSelector((state) => state.form.bags);
-  const location = useSelector((state) => state.form.location);
-  const adressee = useSelector((state) => state.form.adressee);
   const street = useSelector((state) => state.form.street);
   const city = useSelector((state) => state.form.city);
   const pc = useSelector((state) => state.form.pc);

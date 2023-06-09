@@ -7,7 +7,6 @@ function StepOne() {
   const options = useSelector((state) => state.form.options);
 
   function handleChoice(e) {
-    // e.currentTarget.classList.toggle("active");
     const selectedOption = e.target.nextSibling.innerText;
 
     if (options.includes(selectedOption)) {

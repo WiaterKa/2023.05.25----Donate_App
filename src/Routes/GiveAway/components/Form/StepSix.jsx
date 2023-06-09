@@ -21,7 +21,7 @@ function StepSix(props) {
 
   useEffect(() => {
     resetFormState();
-  });
+  }, []);
 
   const resetFormState = () => {
     dispatch(setOption([]));

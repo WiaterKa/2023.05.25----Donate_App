@@ -1,6 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
+  step: 1,
   options: [],
   bags: 0,
   adressee: "",
@@ -19,6 +20,16 @@ export const formSlice = createSlice({
   name: "form",
   initialState,
   reducers: {
+    setStepInc: (state) => {
+      state.step += 1;
+    },
+    setStepDec: (state) => {
+      state.step -= 1;
+    },
+    setStepRed: (state) => {
+      state.step = 1;
+    },
+
     setOption: (state, action) => {
       state.options = action.payload;
     },
@@ -71,6 +82,9 @@ export const {
   setDate,
   setHour,
   setMessage,
+  setStepInc,
+  setStepDec,
+  setStepRed,
 } = formSlice.actions;
 
 export default formSlice.reducer;

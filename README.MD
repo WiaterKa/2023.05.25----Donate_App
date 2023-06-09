@@ -12,6 +12,7 @@ Technologies/tools:
 
 - React;
 - React Router;
+- Redux Toolkit (managing part of states in the app);
 - React Scroll;
 - React useForm Hook (form validation);
 - Sass;
